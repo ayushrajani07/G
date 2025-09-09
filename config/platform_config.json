@@ -1,0 +1,18 @@
+{
+  "platform": {
+    "name": "G6.1 Options Analytics Platform",
+    "version": "1.0.0",
+    "description": "Complete options analytics and monitoring platform"
+  },
+  "collection": {
+    "default_interval_seconds": 30,
+    "max_workers": 2,
+    "retry_attempts": 3,
+    "timeout_seconds": 30
+  },
+  "storage": {
+    "csv_enabled": true,
+    "compression_enabled": false,
+    "backup_enabled": false
+  }
+}

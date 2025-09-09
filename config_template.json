@@ -1,0 +1,200 @@
+{
+  "platform": {
+    "name": "G6.1 Options Analytics Platform",
+    "version": "2.0.0",
+    "mode": "live",
+    "debug_level": "info",
+    "log_condensation": "dynamic"
+  },
+  "market": {
+    "indices": ["NIFTY", "BANKNIFTY", "FINNIFTY", "MIDCPNIFTY"],
+    "trading_hours": {
+      "start": "09:15",
+      "end": "15:30",
+      "timezone": "Asia/Kolkata"
+    },
+    "collection_interval": 30,
+    "market_holidays": []
+  },
+  "data_collection": {
+    "options": {
+      "strike_configuration": {
+        "symmetric_otm": {
+          "enabled": true,
+          "strikes_per_side": 5,
+          "offsets": [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5],
+          "description": "ATM ± N strikes symmetrically"
+        },
+        "asymmetric_otm": {
+          "enabled": false,
+          "call_strikes": [0, 1, 2, 3, 4, 5],
+          "put_strikes": [0, -1, -2, -3, -4, -5, -6, -7],
+          "description": "Different OTM depths for calls vs puts"
+        },
+        "custom_offsets": {
+          "enabled": false,
+          "NIFTY": [-3, -2, -1, 0, 1, 2, 3],
+          "BANKNIFTY": [-5, -3, -1, 0, 1, 3, 5],
+          "FINNIFTY": [-4, -2, -1, 0, 1, 2, 4],
+          "MIDCPNIFTY": [-3, -2, -1, 0, 1, 2, 3]
+        }
+      },
+      "data_fields": {
+        "basic": ["tradingsymbol", "strike", "expiry", "option_type", "last_price", "volume", "oi"],
+        "pricing": ["change", "pchange", "iv"],
+        "greeks": ["delta", "gamma", "theta", "vega", "rho"],
+        "market_depth": {
+          "enabled": false,
+          "fields": ["bid", "ask", "bid_quantity", "ask_quantity"]
+        },
+        "exclude_redundant": true
+      },
+      "expiry_selection": {
+        "current_week": true,
+        "next_week": false,
+        "monthly": false,
+        "custom_dates": []
+      }
+    },
+    "performance": {
+      "max_concurrent_requests": 10,
+      "rate_limiting": {
+        "requests_per_minute": 200,
+        "burst_allowance": 50,
+        "backoff_strategy": "exponential"
+      },
+      "caching": {
+        "enabled": true,
+        "ttl_seconds": 5,
+        "max_cache_size": 1000
+      },
+      "batch_processing": {
+        "enabled": true,
+        "batch_size": 25,
+        "batch_delay_ms": 100
+      }
+    }
+  },
+  "storage": {
+    "csv": {
+      "enabled": true,
+      "base_path": "data/csv",
+      "compression": false,
+      "backup": true,
+      "rotation": {
+        "enabled": true,
+        "max_file_size_mb": 100,
+        "retention_days": 30
+      },
+      "structure": {
+        "by_index": true,
+        "by_expiry": true,
+        "by_offset": true,
+        "filename_format": "YYYY-MM-DD_HHmmss.csv"
+      }
+    },
+    "influxdb": {
+      "enabled": false,
+      "url": "http://localhost:8086",
+      "database": "g6_analytics",
+      "retention_policy": "30d",
+      "measurement_prefix": "options_"
+    },
+    "database": {
+      "enabled": false,
+      "type": "sqlite",
+      "connection_string": "data/g6_platform.db"
+    }
+  },
+  "analytics": {
+    "greeks_calculation": {
+      "enabled": true,
+      "calculation_engine": "primary",
+      "avoid_redundancy": true,
+      "risk_free_rate": 0.06,
+      "dividend_yield": 0.0
+    },
+    "iv_calculation": {
+      "enabled": true,
+      "method": "black_scholes",
+      "convergence_threshold": 0.001,
+      "max_iterations": 100
+    },
+    "metrics": {
+      "pcr_analysis": true,
+      "volatility_surface": false,
+      "gamma_exposure": false,
+      "delta_hedging": false
+    },
+    "real_time_processing": {
+      "enabled": true,
+      "update_interval": 5,
+      "anomaly_detection": false
+    }
+  },
+  "monitoring": {
+    "health_checks": {
+      "enabled": true,
+      "interval": 60,
+      "endpoints": ["kite_api", "storage", "collectors"]
+    },
+    "metrics_collection": {
+      "enabled": true,
+      "detailed_stats": false,
+      "performance_tracking": true
+    },
+    "alerts": {
+      "enabled": false,
+      "webhook_url": "",
+      "alert_conditions": {
+        "data_collection_failure_rate": 0.1,
+        "api_rate_limit_breach": true,
+        "storage_errors": true
+      }
+    }
+  },
+  "ui": {
+    "terminal": {
+      "rich_output": true,
+      "progress_bars": true,
+      "color_scheme": "dark",
+      "menu_system": true,
+      "log_display": {
+        "condensed": true,
+        "max_lines": 50,
+        "auto_scroll": true
+      }
+    },
+    "dashboard": {
+      "enabled": false,
+      "port": 8080,
+      "auto_refresh": 30
+    }
+  },
+  "security": {
+    "token_management": {
+      "auto_refresh": true,
+      "secure_storage": true,
+      "encryption": false
+    },
+    "api_security": {
+      "rate_limit_enforcement": true,
+      "request_validation": true,
+      "error_masking": true
+    }
+  },
+  "development": {
+    "debug_mode": false,
+    "verbose_logging": false,
+    "mock_data": {
+      "enabled": false,
+      "realistic_pricing": true,
+      "market_simulation": false
+    },
+    "testing": {
+      "unit_tests": false,
+      "integration_tests": false,
+      "performance_tests": false
+    }
+  }
+}

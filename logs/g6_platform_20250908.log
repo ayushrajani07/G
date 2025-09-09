@@ -1,0 +1,1163 @@
+2025-09-08 08:41:18,819 - __main__.G6Platform - INFO - ✅ Logging configured
+2025-09-08 08:41:20,650 - __main__.G6Platform - INFO - ✅ Metrics system initialized
+2025-09-08 08:41:20,651 - health_monitor.HealthMonitor - WARNING - 🔔 ALERT: CRITICAL: g6_platform_core is in critical state
+2025-09-08 08:41:20,651 - __main__.G6Platform - INFO - ✅ Health monitoring initialized
+2025-09-08 08:41:20,659 - token_manager.SecureStorage - INFO - ✅ Secure storage initialized: tokens\secure_tokens.json
+2025-09-08 08:41:20,659 - token_manager.TokenManager - INFO - 🔄 Auto-refresh loop started
+2025-09-08 08:41:20,659 - token_manager.TokenManager - INFO - 🚀 Auto-refresh thread started
+2025-09-08 08:41:20,660 - token_manager.TokenManager - INFO - ✅ Token Manager initialized
+2025-09-08 08:41:20,660 - __main__.G6Platform - INFO - ✅ Kite access token available
+2025-09-08 08:41:20,660 - kite_provider_complete.KiteDataProvider - INFO - ✅ Kite Data Provider initialized
+2025-09-08 08:41:21,163 - kite_provider_complete.KiteDataProvider - INFO - ✅ Connected to Kite as: Ayush Rajani
+2025-09-08 08:41:21,163 - kite_provider_complete.KiteDataProvider - INFO - ✅ Kite Connect initialized and connected
+2025-09-08 08:41:21,163 - __main__.G6Platform - INFO - ✅ Kite data provider initialized
+2025-09-08 08:41:21,163 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - ✅ Enhanced CSV Sink initialized with base: data\csv
+2025-09-08 08:41:21,163 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - 🎛️ Configuration: compression=False, backup=True, max_size=100MB
+2025-09-08 08:41:21,164 - __main__.G6Platform - INFO - ✅ CSV storage initialized
+2025-09-08 08:41:21,164 - atm_options_collector.ATMOptionsCollector - INFO - ✅ ATM Options Collector initialized
+2025-09-08 08:41:21,164 - overview_collector.OverviewCollector - INFO - ✅ Overview Collector initialized (advanced_analytics: True)
+2025-09-08 08:41:21,164 - analytics_engine.IVCalculator - INFO - ✅ IV Calculator initialized (r=0.06, q=0.0)
+2025-09-08 08:41:21,164 - analytics_engine.GreeksCalculator - INFO - ✅ Greeks Calculator initialized
+2025-09-08 08:41:21,164 - analytics_engine.PCRAnalyzer - INFO - ✅ PCR Analyzer initialized
+2025-09-08 08:41:21,164 - __main__.G6Platform - INFO - ✅ Collectors and analytics initialized
+2025-09-08 08:41:21,164 - __main__.G6Platform - INFO - ✅ G6 Platform initialization completed
+2025-09-08 08:41:21,164 - __main__.G6Platform - INFO - 🚀 Starting G6 Platform...
+2025-09-08 08:41:21,164 - __main__.G6Platform - INFO - 🔄 Main processing loop started
+2025-09-08 08:41:21,165 - __main__.G6Platform - INFO - ✅ G6 Platform started successfully
+2025-09-08 09:15:21,600 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:15:21,600 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24827.65, ATM=24850.0
+2025-09-08 09:15:21,600 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:15:21,600 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.41s
+2025-09-08 09:15:21,660 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:15:21,660 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54155.7, ATM=54200.0
+2025-09-08 09:15:21,661 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:15:21,661 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.06s
+2025-09-08 09:15:51,235 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:15:51,235 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24809.95, ATM=24800.0
+2025-09-08 09:15:51,235 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:15:51,235 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:15:51,566 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:15:51,567 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54134.65, ATM=54100.0
+2025-09-08 09:15:51,567 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:15:51,567 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:16:21,235 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:16:21,236 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24810, ATM=24800.0
+2025-09-08 09:16:21,236 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:16:21,236 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:16:21,569 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:16:21,569 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54130.5, ATM=54100.0
+2025-09-08 09:16:21,569 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:16:21,569 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:16:51,249 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:16:51,249 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24800.6, ATM=24800.0
+2025-09-08 09:16:51,249 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:16:51,249 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:16:51,567 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:16:51,568 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54115.35, ATM=54100.0
+2025-09-08 09:16:51,568 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:16:51,568 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:17:21,234 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:17:21,234 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24803.05, ATM=24800.0
+2025-09-08 09:17:21,234 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:17:21,234 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:17:21,571 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:17:21,571 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54129.65, ATM=54100.0
+2025-09-08 09:17:21,571 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:17:21,571 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:17:51,239 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:17:51,239 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24806.05, ATM=24800.0
+2025-09-08 09:17:51,239 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:17:51,240 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:17:51,572 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:17:51,573 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54163.45, ATM=54200.0
+2025-09-08 09:17:51,573 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:17:51,573 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:18:21,234 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:18:21,234 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24798.95, ATM=24800.0
+2025-09-08 09:18:21,234 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:18:21,234 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:18:21,569 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:18:21,570 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54151, ATM=54200.0
+2025-09-08 09:18:21,570 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:18:21,570 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:18:51,257 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:18:51,257 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24801.5, ATM=24800.0
+2025-09-08 09:18:51,257 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:18:51,257 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:18:51,570 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:18:51,570 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54160.45, ATM=54200.0
+2025-09-08 09:18:51,570 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:18:51,570 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.31s
+2025-09-08 09:19:21,236 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:19:21,236 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24790.5, ATM=24800.0
+2025-09-08 09:19:21,237 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:19:21,237 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:19:21,571 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:19:21,572 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54147.95, ATM=54100.0
+2025-09-08 09:19:21,572 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:19:21,572 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:19:51,235 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:19:51,235 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24794.4, ATM=24800.0
+2025-09-08 09:19:51,235 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:19:51,236 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:19:51,578 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:19:51,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54192.45, ATM=54200.0
+2025-09-08 09:19:51,579 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:19:51,579 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:20:21,238 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:20:21,239 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24790.3, ATM=24800.0
+2025-09-08 09:20:21,239 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:20:21,239 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:20:21,571 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:20:21,571 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54169.75, ATM=54200.0
+2025-09-08 09:20:21,571 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:20:21,571 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:20:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:20:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24786.85, ATM=24800.0
+2025-09-08 09:20:51,245 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:20:51,245 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:20:51,575 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:20:51,575 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54160.25, ATM=54200.0
+2025-09-08 09:20:51,575 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:20:51,575 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:21:21,243 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:21:21,243 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24794.3, ATM=24800.0
+2025-09-08 09:21:21,243 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:21:21,243 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:21:21,571 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:21:21,571 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54190.95, ATM=54200.0
+2025-09-08 09:21:21,571 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:21:21,571 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:21:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:21:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24804.15, ATM=24800.0
+2025-09-08 09:21:51,246 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:21:51,246 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:21:51,581 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:21:51,581 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54204.8, ATM=54200.0
+2025-09-08 09:21:51,581 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:21:51,582 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:22:21,246 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:22:21,246 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24807.5, ATM=24800.0
+2025-09-08 09:22:21,246 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:22:21,247 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:22:21,575 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:22:21,575 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54211.75, ATM=54200.0
+2025-09-08 09:22:21,575 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:22:21,575 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:22:51,242 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:22:51,242 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24790.65, ATM=24800.0
+2025-09-08 09:22:51,242 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:22:51,242 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:22:51,582 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:22:51,582 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54168.65, ATM=54200.0
+2025-09-08 09:22:51,582 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:22:51,582 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:23:21,259 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:23:21,259 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24778.3, ATM=24800.0
+2025-09-08 09:23:21,259 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:23:21,259 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:23:21,575 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:23:21,576 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54140, ATM=54100.0
+2025-09-08 09:23:21,576 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:23:21,576 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:23:51,244 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:23:51,244 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24772.6, ATM=24750.0
+2025-09-08 09:23:51,244 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:23:51,244 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:23:51,575 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:23:51,575 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54112.7, ATM=54100.0
+2025-09-08 09:23:51,575 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:23:51,575 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:24:21,248 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:24:21,248 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24759.8, ATM=24750.0
+2025-09-08 09:24:21,249 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:24:21,249 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:24:21,576 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:24:21,577 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54090.7, ATM=54100.0
+2025-09-08 09:24:21,577 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:24:21,577 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:24:51,240 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:24:51,240 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24764.8, ATM=24750.0
+2025-09-08 09:24:51,240 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:24:51,240 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:24:51,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:24:51,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54103.6, ATM=54100.0
+2025-09-08 09:24:51,579 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:24:51,579 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:25:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:25:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24769.2, ATM=24750.0
+2025-09-08 09:25:21,256 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:25:21,256 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:25:21,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:25:21,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54119.85, ATM=54100.0
+2025-09-08 09:25:21,579 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:25:21,579 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:25:51,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:25:51,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24774.9, ATM=24750.0
+2025-09-08 09:25:51,256 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:25:51,257 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:25:51,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:25:51,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54129.05, ATM=54100.0
+2025-09-08 09:25:51,589 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:25:51,589 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:26:21,242 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:26:21,242 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24775.7, ATM=24800.0
+2025-09-08 09:26:21,242 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:26:21,242 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:26:21,576 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:26:21,576 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54133.95, ATM=54100.0
+2025-09-08 09:26:21,576 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:26:21,576 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:26:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:26:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24780.45, ATM=24800.0
+2025-09-08 09:26:51,245 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:26:51,246 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:26:51,578 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:26:51,578 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54151.05, ATM=54200.0
+2025-09-08 09:26:51,578 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:26:51,578 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:27:21,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:27:21,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24777.3, ATM=24800.0
+2025-09-08 09:27:21,247 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:27:21,247 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:27:21,576 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:27:21,577 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54152.75, ATM=54200.0
+2025-09-08 09:27:21,577 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:27:21,577 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:27:51,261 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:27:51,261 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24779.5, ATM=24800.0
+2025-09-08 09:27:51,261 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:27:51,261 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:27:51,576 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:27:51,576 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54167.75, ATM=54200.0
+2025-09-08 09:27:51,577 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:27:51,577 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:28:21,252 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:28:21,252 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24785.5, ATM=24800.0
+2025-09-08 09:28:21,252 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:28:21,252 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:28:21,594 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:28:21,594 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54186.4, ATM=54200.0
+2025-09-08 09:28:21,594 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:28:21,594 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:28:51,244 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:28:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24792.25, ATM=24800.0
+2025-09-08 09:28:51,245 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:28:51,245 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:28:51,587 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:28:51,588 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54186.05, ATM=54200.0
+2025-09-08 09:28:51,588 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:28:51,588 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:29:21,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:29:21,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24794.25, ATM=24800.0
+2025-09-08 09:29:21,248 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:29:21,248 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:29:21,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:29:21,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54193.65, ATM=54200.0
+2025-09-08 09:29:21,584 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:29:21,585 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:29:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:29:51,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24790.65, ATM=24800.0
+2025-09-08 09:29:51,245 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:29:51,246 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:29:51,606 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:29:51,606 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54182.45, ATM=54200.0
+2025-09-08 09:29:51,607 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:29:51,607 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.36s
+2025-09-08 09:30:21,244 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:30:21,244 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24790.2, ATM=24800.0
+2025-09-08 09:30:21,244 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:30:21,244 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:30:21,587 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:30:21,587 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54176.95, ATM=54200.0
+2025-09-08 09:30:21,587 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:30:21,587 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:30:51,253 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:30:51,253 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24800.45, ATM=24800.0
+2025-09-08 09:30:51,253 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:30:51,253 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:30:51,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:30:51,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54214.6, ATM=54200.0
+2025-09-08 09:30:51,579 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:30:51,579 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:31:21,244 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:31:21,245 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24807.7, ATM=24800.0
+2025-09-08 09:31:21,245 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:31:21,245 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:31:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:31:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54225.4, ATM=54200.0
+2025-09-08 09:31:21,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:31:21,592 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.35s
+2025-09-08 09:31:51,250 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:31:51,250 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24811.75, ATM=24800.0
+2025-09-08 09:31:51,250 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:31:51,250 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:31:51,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:31:51,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54240.05, ATM=54200.0
+2025-09-08 09:31:51,584 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:31:51,584 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:32:21,278 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:32:21,278 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24816.25, ATM=24800.0
+2025-09-08 09:32:21,278 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:32:21,278 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.08s
+2025-09-08 09:32:21,580 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:32:21,580 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54252.75, ATM=54300.0
+2025-09-08 09:32:21,580 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:32:21,580 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.30s
+2025-09-08 09:32:51,260 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:32:51,260 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24815.75, ATM=24800.0
+2025-09-08 09:32:51,260 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:32:51,260 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:32:51,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:32:51,579 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54247.65, ATM=54200.0
+2025-09-08 09:32:51,579 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:32:51,579 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:33:21,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:33:21,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24816, ATM=24800.0
+2025-09-08 09:33:21,247 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:33:21,247 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:33:21,592 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:33:21,592 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54251, ATM=54300.0
+2025-09-08 09:33:21,592 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:33:21,592 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.35s
+2025-09-08 09:33:51,246 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:33:51,246 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24821.15, ATM=24800.0
+2025-09-08 09:33:51,246 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:33:51,246 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:33:51,583 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:33:51,583 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54260.9, ATM=54300.0
+2025-09-08 09:33:51,583 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:33:51,583 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:34:21,263 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:34:21,263 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24820.2, ATM=24800.0
+2025-09-08 09:34:21,263 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:34:21,263 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:34:21,582 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:34:21,583 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54251.85, ATM=54300.0
+2025-09-08 09:34:21,583 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:34:21,583 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:34:51,264 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:34:51,264 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24821.95, ATM=24800.0
+2025-09-08 09:34:51,265 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:34:51,265 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:34:51,582 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:34:51,582 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54256.3, ATM=54300.0
+2025-09-08 09:34:51,582 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:34:51,582 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:35:21,248 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:35:21,248 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24827, ATM=24850.0
+2025-09-08 09:35:21,248 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:35:21,249 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:35:21,582 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:35:21,582 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54262.15, ATM=54300.0
+2025-09-08 09:35:21,582 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:35:21,583 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:35:51,249 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:35:51,249 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24825.7, ATM=24850.0
+2025-09-08 09:35:51,249 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:35:51,249 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:35:51,642 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:35:51,642 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54257.55, ATM=54300.0
+2025-09-08 09:35:51,642 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:35:51,642 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.39s
+2025-09-08 09:36:21,248 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:36:21,248 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24825.9, ATM=24850.0
+2025-09-08 09:36:21,248 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:36:21,248 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:36:21,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:36:21,585 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54255.7, ATM=54300.0
+2025-09-08 09:36:21,585 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:36:21,585 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:36:51,249 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:36:51,249 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24827.05, ATM=24850.0
+2025-09-08 09:36:51,249 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:36:51,249 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:36:51,602 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:36:51,602 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54261.2, ATM=54300.0
+2025-09-08 09:36:51,602 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:36:51,602 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.35s
+2025-09-08 09:37:21,252 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:37:21,252 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24836.4, ATM=24850.0
+2025-09-08 09:37:21,252 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:37:21,252 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:37:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:37:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54275.3, ATM=54300.0
+2025-09-08 09:37:21,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:37:21,591 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:37:51,246 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:37:51,246 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24835.7, ATM=24850.0
+2025-09-08 09:37:51,247 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:37:51,247 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:37:51,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:37:51,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54280.85, ATM=54300.0
+2025-09-08 09:37:51,584 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:37:51,584 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:38:21,275 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:38:21,275 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24825.05, ATM=24850.0
+2025-09-08 09:38:21,275 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:38:21,276 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.08s
+2025-09-08 09:38:21,592 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:38:21,592 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54259.4, ATM=54300.0
+2025-09-08 09:38:21,592 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:38:21,592 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:38:51,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:38:51,248 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24828.9, ATM=24850.0
+2025-09-08 09:38:51,248 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:38:51,248 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:38:51,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:38:51,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54260.6, ATM=54300.0
+2025-09-08 09:38:51,589 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:38:51,589 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:39:21,270 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:39:21,270 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24830.8, ATM=24850.0
+2025-09-08 09:39:21,270 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:39:21,270 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:39:21,586 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:39:21,586 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54279.15, ATM=54300.0
+2025-09-08 09:39:21,586 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:39:21,586 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:39:51,253 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:39:51,253 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24834.65, ATM=24850.0
+2025-09-08 09:39:51,254 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:39:51,254 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:39:51,607 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:39:51,607 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54291.9, ATM=54300.0
+2025-09-08 09:39:51,607 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:39:51,608 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.35s
+2025-09-08 09:40:21,269 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:40:21,269 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24838.65, ATM=24850.0
+2025-09-08 09:40:21,270 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:40:21,270 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:40:21,594 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:40:21,594 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54309.5, ATM=54300.0
+2025-09-08 09:40:21,594 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:40:21,594 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:40:51,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:40:51,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24839.55, ATM=24850.0
+2025-09-08 09:40:51,255 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:40:51,255 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:40:51,585 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:40:51,585 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54310.6, ATM=54300.0
+2025-09-08 09:40:51,585 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:40:51,586 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:41:21,254 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:41:21,254 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24843.05, ATM=24850.0
+2025-09-08 09:41:21,254 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:41:21,254 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:41:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:41:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54323.5, ATM=54300.0
+2025-09-08 09:41:21,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:41:21,591 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:41:51,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:41:51,247 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24837.15, ATM=24850.0
+2025-09-08 09:41:51,247 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:41:51,248 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:41:51,585 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:41:51,585 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54310, ATM=54300.0
+2025-09-08 09:41:51,586 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:41:51,586 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:42:21,268 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:42:21,268 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24835.1, ATM=24850.0
+2025-09-08 09:42:21,268 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:42:21,268 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:42:21,593 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:42:21,593 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54301.6, ATM=54300.0
+2025-09-08 09:42:21,593 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:42:21,594 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:42:51,251 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:42:51,251 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24831.75, ATM=24850.0
+2025-09-08 09:42:51,251 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:42:51,251 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:42:51,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:42:51,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54298.5, ATM=54300.0
+2025-09-08 09:42:51,590 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:42:51,590 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:43:21,261 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:43:21,261 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24827.75, ATM=24850.0
+2025-09-08 09:43:21,262 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:43:21,262 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:43:21,585 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:43:21,585 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54295.45, ATM=54300.0
+2025-09-08 09:43:21,585 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:43:21,585 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:43:51,254 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:43:51,254 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24828.4, ATM=24850.0
+2025-09-08 09:43:51,255 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:43:51,255 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:43:51,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:43:51,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54291.6, ATM=54300.0
+2025-09-08 09:43:51,590 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:43:51,590 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:44:21,252 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:44:21,252 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24825.25, ATM=24850.0
+2025-09-08 09:44:21,252 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:44:21,252 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:44:21,586 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:44:21,586 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54288.55, ATM=54300.0
+2025-09-08 09:44:21,586 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:44:21,586 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:44:51,261 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:44:51,261 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24828.25, ATM=24850.0
+2025-09-08 09:44:51,261 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:44:51,261 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:44:51,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:44:51,584 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54296.15, ATM=54300.0
+2025-09-08 09:44:51,584 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:44:51,584 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:45:21,251 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:45:21,251 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24831.2, ATM=24850.0
+2025-09-08 09:45:21,251 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:45:21,251 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:45:21,605 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:45:21,605 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54293.2, ATM=54300.0
+2025-09-08 09:45:21,605 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:45:21,605 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.35s
+2025-09-08 09:45:51,251 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:45:51,251 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24833.85, ATM=24850.0
+2025-09-08 09:45:51,252 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:45:51,252 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:45:51,597 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:45:51,597 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54297.3, ATM=54300.0
+2025-09-08 09:45:51,597 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:45:51,598 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.35s
+2025-09-08 09:46:21,252 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:46:21,253 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24830, ATM=24850.0
+2025-09-08 09:46:21,253 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:46:21,253 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:46:21,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:46:21,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54280.35, ATM=54300.0
+2025-09-08 09:46:21,589 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:46:21,589 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:46:51,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:46:51,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24828.35, ATM=24850.0
+2025-09-08 09:46:51,256 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:46:51,256 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:46:51,592 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:46:51,592 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54272.05, ATM=54300.0
+2025-09-08 09:46:51,592 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:46:51,592 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:47:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:47:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24829.25, ATM=24850.0
+2025-09-08 09:47:21,256 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:47:21,256 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:47:21,600 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:47:21,600 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54264.9, ATM=54300.0
+2025-09-08 09:47:21,600 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:47:21,600 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:47:51,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:47:51,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24826.95, ATM=24850.0
+2025-09-08 09:47:51,257 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:47:51,257 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:47:51,600 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:47:51,601 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54257.7, ATM=54300.0
+2025-09-08 09:47:51,601 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:47:51,601 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:48:21,264 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:48:21,264 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24825.4, ATM=24850.0
+2025-09-08 09:48:21,264 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:48:21,264 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:48:21,588 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:48:21,588 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54243.5, ATM=54200.0
+2025-09-08 09:48:21,588 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:48:21,588 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:48:51,254 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:48:51,254 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24827, ATM=24850.0
+2025-09-08 09:48:51,254 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:48:51,254 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:48:51,586 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:48:51,586 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54250.25, ATM=54300.0
+2025-09-08 09:48:51,586 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:48:51,586 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:49:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:49:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24827.55, ATM=24850.0
+2025-09-08 09:49:21,256 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:49:21,256 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:49:21,595 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:49:21,595 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54260.85, ATM=54300.0
+2025-09-08 09:49:21,595 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:49:21,595 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:49:51,262 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:49:51,262 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24829, ATM=24850.0
+2025-09-08 09:49:51,262 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:49:51,262 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:49:51,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:49:51,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54257.75, ATM=54300.0
+2025-09-08 09:49:51,590 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:49:51,590 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:50:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:50:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24826.6, ATM=24850.0
+2025-09-08 09:50:21,256 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:50:21,256 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:50:21,593 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:50:21,593 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54258.6, ATM=54300.0
+2025-09-08 09:50:21,593 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:50:21,593 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:50:51,253 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:50:51,253 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24822.4, ATM=24800.0
+2025-09-08 09:50:51,254 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:50:51,254 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:50:51,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:50:51,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54239.85, ATM=54200.0
+2025-09-08 09:50:51,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:50:51,591 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:51:21,273 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:51:21,273 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24820.35, ATM=24800.0
+2025-09-08 09:51:21,273 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:51:21,273 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.07s
+2025-09-08 09:51:21,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:51:21,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54235.3, ATM=54200.0
+2025-09-08 09:51:21,590 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:51:21,590 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:51:51,254 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:51:51,254 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24828.65, ATM=24850.0
+2025-09-08 09:51:51,254 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:51:51,255 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:51:51,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:51:51,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54242.35, ATM=54200.0
+2025-09-08 09:51:51,589 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:51:51,589 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:52:21,265 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:52:21,266 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24823.35, ATM=24800.0
+2025-09-08 09:52:21,266 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:52:21,266 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:52:21,590 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:52:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54214.55, ATM=54200.0
+2025-09-08 09:52:21,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:52:21,591 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:52:51,259 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:52:51,260 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24824.9, ATM=24800.0
+2025-09-08 09:52:51,260 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:52:51,260 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:52:51,588 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:52:51,588 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54209.1, ATM=54200.0
+2025-09-08 09:52:51,588 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:52:51,588 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:53:21,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:53:21,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24824.25, ATM=24800.0
+2025-09-08 09:53:21,255 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:53:21,255 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:53:21,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:53:21,589 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54208.7, ATM=54200.0
+2025-09-08 09:53:21,589 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:53:21,589 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:53:51,262 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:53:51,262 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24815.85, ATM=24800.0
+2025-09-08 09:53:51,263 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:53:51,263 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:53:51,587 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:53:51,587 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54178.3, ATM=54200.0
+2025-09-08 09:53:51,587 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:53:51,587 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.32s
+2025-09-08 09:54:21,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:54:21,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24816.25, ATM=24800.0
+2025-09-08 09:54:21,255 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:54:21,255 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:54:21,592 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:54:21,592 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54169.05, ATM=54200.0
+2025-09-08 09:54:21,592 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:54:21,593 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:54:51,265 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:54:51,265 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24813.5, ATM=24800.0
+2025-09-08 09:54:51,265 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:54:51,266 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:54:51,596 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:54:51,596 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54157.25, ATM=54200.0
+2025-09-08 09:54:51,596 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:54:51,596 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:55:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:55:21,256 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24810.15, ATM=24800.0
+2025-09-08 09:55:21,256 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:55:21,256 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:55:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:55:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54161.9, ATM=54200.0
+2025-09-08 09:55:21,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:55:21,592 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:55:51,257 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:55:51,257 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24804.75, ATM=24800.0
+2025-09-08 09:55:51,257 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:55:51,257 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:55:51,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:55:51,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54155.95, ATM=54200.0
+2025-09-08 09:55:51,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:55:51,591 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:56:21,263 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:56:21,263 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24805.45, ATM=24800.0
+2025-09-08 09:56:21,263 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:56:21,264 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.06s
+2025-09-08 09:56:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:56:21,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54154.2, ATM=54200.0
+2025-09-08 09:56:21,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:56:21,591 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:56:51,260 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:56:51,260 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24802.95, ATM=24800.0
+2025-09-08 09:56:51,261 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:56:51,261 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:56:51,597 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:56:51,597 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54138.65, ATM=54100.0
+2025-09-08 09:56:51,597 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:56:51,597 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:57:21,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:57:21,255 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24809, ATM=24800.0
+2025-09-08 09:57:21,255 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:57:21,255 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:57:21,594 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:57:21,594 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54142.95, ATM=54100.0
+2025-09-08 09:57:21,594 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:57:21,595 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.34s
+2025-09-08 09:57:51,258 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:57:51,258 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ NIFTY ATM: Spot=24811.75, ATM=24800.0
+2025-09-08 09:57:51,258 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:57:51,258 - __main__.G6Platform - INFO - ✅ Processed NIFTY: 10 options, processed in 0.05s
+2025-09-08 09:57:51,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ Retrieved LTP for 1 instruments
+2025-09-08 09:57:51,591 - kite_provider_complete.KiteDataProvider - DEBUG - ✅ BANKNIFTY ATM: Spot=54151.8, ATM=54200.0
+2025-09-08 09:57:51,591 - __main__.G6Platform - ERROR - 🔴 CSV storage error: EnhancedCSVSink.write_options_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 09:57:51,591 - __main__.G6Platform - INFO - ✅ Processed BANKNIFTY: 10 options, processed in 0.33s
+2025-09-08 09:58:18,321 - __main__.G6Platform - INFO - 🛑 Stopping G6 Platform...
+2025-09-08 10:01:03,825 - __main__.G6Platform - INFO - ✅ Logging configured
+2025-09-08 10:01:04,481 - __main__.G6Platform - INFO - ✅ Metrics system initialized
+2025-09-08 10:01:04,482 - health_monitor.HealthMonitor - WARNING - 🔔 ALERT: CRITICAL: g6_platform_core is in critical state
+2025-09-08 10:01:04,482 - __main__.G6Platform - INFO - ✅ Health monitoring initialized
+2025-09-08 10:01:04,483 - token_manager.SecureStorage - INFO - ✅ Secure storage initialized: tokens\secure_tokens.json
+2025-09-08 10:01:04,484 - token_manager.TokenManager - INFO - 🔄 Auto-refresh loop started
+2025-09-08 10:01:04,484 - token_manager.TokenManager - INFO - 🚀 Auto-refresh thread started
+2025-09-08 10:01:04,484 - token_manager.TokenManager - INFO - ✅ Token Manager initialized
+2025-09-08 10:01:04,484 - __main__.G6Platform - INFO - ✅ Kite access token available
+2025-09-08 10:01:04,484 - kite_provider_complete.KiteDataProvider - INFO - ✅ Kite Data Provider initialized
+2025-09-08 10:01:04,823 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Connection test failed: Incorrect `api_key` or `access_token`.
+2025-09-08 10:01:04,823 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Kite Connect connection test failed
+2025-09-08 10:01:04,823 - __main__.G6Platform - ERROR - 🔴 Failed to initialize Kite provider
+2025-09-08 10:01:04,824 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - ✅ Enhanced CSV Sink initialized with base: data\csv
+2025-09-08 10:01:04,824 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - 🎛️ Configuration: compression=False, backup=True, max_size=100MB
+2025-09-08 10:01:04,824 - __main__.G6Platform - INFO - ✅ CSV storage initialized
+2025-09-08 10:01:04,824 - atm_options_collector.ATMOptionsCollector - INFO - ✅ ATM Options Collector initialized
+2025-09-08 10:01:04,824 - overview_collector.OverviewCollector - INFO - ✅ Overview Collector initialized (advanced_analytics: True)
+2025-09-08 10:01:04,824 - analytics_engine.IVCalculator - INFO - ✅ IV Calculator initialized (r=0.06, q=0.0)
+2025-09-08 10:01:04,825 - analytics_engine.GreeksCalculator - INFO - ✅ Greeks Calculator initialized
+2025-09-08 10:01:04,825 - analytics_engine.PCRAnalyzer - INFO - ✅ PCR Analyzer initialized
+2025-09-08 10:01:04,825 - __main__.G6Platform - INFO - ✅ Collectors and analytics initialized
+2025-09-08 10:01:04,825 - __main__.G6Platform - INFO - ✅ G6 Platform initialization completed
+2025-09-08 10:01:04,825 - __main__.G6Platform - INFO - 🚀 Starting G6 Platform...
+2025-09-08 10:01:04,825 - __main__.G6Platform - INFO - 🔄 Main processing loop started
+2025-09-08 10:01:04,825 - __main__.G6Platform - INFO - ✅ G6 Platform started successfully
+2025-09-08 10:01:04,826 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:08,826 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:12,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:12,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3b9590 state=finished raised ConnectionError>]
+2025-09-08 10:01:12,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:01:12,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:01:12,827 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:01:12,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:16,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:20,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:20,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3cc5f0 state=finished raised ConnectionError>]
+2025-09-08 10:01:20,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:01:20,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:01:20,829 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:01:34,826 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:38,826 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:42,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:42,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f39d050 state=finished raised ConnectionError>]
+2025-09-08 10:01:42,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:01:42,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:01:42,828 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:01:42,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:46,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:50,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:01:50,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3a2210 state=finished raised ConnectionError>]
+2025-09-08 10:01:50,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:01:50,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:01:50,830 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:02:04,826 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:08,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:12,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:12,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3aa8f0 state=finished raised ConnectionError>]
+2025-09-08 10:02:12,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:02:12,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:02:12,828 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:02:12,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:16,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:20,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:20,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3812e0 state=finished raised ConnectionError>]
+2025-09-08 10:02:20,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:02:20,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:02:20,830 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:02:34,827 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:38,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d4c8e1770 state=finished raised ConnectionError>]
+2025-09-08 10:02:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:02:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:02:42,829 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:02:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:46,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:50,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:02:50,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c1f50 state=finished raised ConnectionError>]
+2025-09-08 10:02:50,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:02:50,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:02:50,832 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:03:04,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:08,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:12,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:12,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c22d0 state=finished raised ConnectionError>]
+2025-09-08 10:03:12,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:03:12,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:03:12,829 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:03:12,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:16,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:20,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:20,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c25d0 state=finished raised ConnectionError>]
+2025-09-08 10:03:20,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:03:20,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:03:20,831 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:03:34,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:38,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c2950 state=finished raised ConnectionError>]
+2025-09-08 10:03:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:03:42,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:03:42,830 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:03:42,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:46,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:50,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:03:50,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c2d50 state=finished raised ConnectionError>]
+2025-09-08 10:03:50,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:03:50,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:03:50,832 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:04:04,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:08,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:12,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:12,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c31d0 state=finished raised ConnectionError>]
+2025-09-08 10:04:12,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:04:12,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:04:12,830 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:04:12,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:16,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:20,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:20,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c34d0 state=finished raised ConnectionError>]
+2025-09-08 10:04:20,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:04:20,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:04:20,831 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:04:34,828 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:38,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:42,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c3850 state=finished raised ConnectionError>]
+2025-09-08 10:04:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:04:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:04:42,831 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:04:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:46,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:50,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:04:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c3bd0 state=finished raised ConnectionError>]
+2025-09-08 10:04:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:04:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:04:50,833 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:05:04,829 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:08,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f400050 state=finished raised ConnectionError>]
+2025-09-08 10:05:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:05:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:05:12,831 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:05:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:16,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:20,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:20,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f400350 state=finished raised ConnectionError>]
+2025-09-08 10:05:20,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:05:20,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:05:20,833 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:05:34,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:38,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f4006d0 state=finished raised ConnectionError>]
+2025-09-08 10:05:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:05:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:05:42,831 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:05:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:46,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:05:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f400a50 state=finished raised ConnectionError>]
+2025-09-08 10:05:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:05:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:05:50,833 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:06:04,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:08,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f400e50 state=finished raised ConnectionError>]
+2025-09-08 10:06:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:06:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:06:12,831 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:06:12,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:16,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:20,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:20,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f401150 state=finished raised ConnectionError>]
+2025-09-08 10:06:20,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:06:20,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:06:20,833 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:06:34,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:38,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:42,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f4014d0 state=finished raised ConnectionError>]
+2025-09-08 10:06:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:06:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:06:42,832 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:06:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:46,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:06:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f401850 state=finished raised ConnectionError>]
+2025-09-08 10:06:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:06:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:06:50,834 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:07:04,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:08,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f401c50 state=finished raised ConnectionError>]
+2025-09-08 10:07:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:07:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:07:12,832 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:07:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:16,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:20,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:20,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c3dd0 state=finished raised ConnectionError>]
+2025-09-08 10:07:20,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:07:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:07:20,835 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:07:34,830 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:38,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c3bd0 state=finished raised ConnectionError>]
+2025-09-08 10:07:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:07:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:07:42,832 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:07:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:46,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:50,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:07:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c3850 state=finished raised ConnectionError>]
+2025-09-08 10:07:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:07:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:07:50,834 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:08:04,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:08,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c3550 state=finished raised ConnectionError>]
+2025-09-08 10:08:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:08:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:08:12,832 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:08:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:16,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:20,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:20,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c3250 state=finished raised ConnectionError>]
+2025-09-08 10:08:20,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:08:20,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:08:20,834 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:08:34,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:38,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c2dd0 state=finished raised ConnectionError>]
+2025-09-08 10:08:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:08:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:08:42,833 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:08:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:46,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:08:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c29d0 state=finished raised ConnectionError>]
+2025-09-08 10:08:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:08:50,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:08:50,835 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:09:04,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:08,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c23d0 state=finished raised ConnectionError>]
+2025-09-08 10:09:12,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:09:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:09:12,833 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:09:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:16,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:20,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c1fd0 state=finished raised ConnectionError>]
+2025-09-08 10:09:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:09:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:09:20,835 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:09:34,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:38,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c1e50 state=finished raised ConnectionError>]
+2025-09-08 10:09:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:09:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:09:42,833 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:09:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:46,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:09:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c18d0 state=finished raised ConnectionError>]
+2025-09-08 10:09:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:09:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:09:50,834 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:10:04,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:08,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c12d0 state=finished raised ConnectionError>]
+2025-09-08 10:10:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:10:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:10:12,834 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:10:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:16,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c06d0 state=finished raised ConnectionError>]
+2025-09-08 10:10:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:10:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:10:20,835 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:10:34,831 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:38,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:42,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f401c50 state=finished raised ConnectionError>]
+2025-09-08 10:10:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:10:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:10:42,833 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:10:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:46,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:10:50,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f4019d0 state=finished raised ConnectionError>]
+2025-09-08 10:10:50,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:10:50,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:10:50,835 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:11:04,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:08,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f4017d0 state=finished raised ConnectionError>]
+2025-09-08 10:11:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:11:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:11:12,833 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:11:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:16,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:20,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f401750 state=finished raised ConnectionError>]
+2025-09-08 10:11:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:11:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:11:20,835 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:11:34,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:38,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:42,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f4014d0 state=finished raised ConnectionError>]
+2025-09-08 10:11:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:11:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:11:42,834 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:11:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:46,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:50,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:11:50,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f401350 state=finished raised ConnectionError>]
+2025-09-08 10:11:50,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:11:50,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:11:50,835 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:12:04,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:08,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:12,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f401150 state=finished raised ConnectionError>]
+2025-09-08 10:12:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:12:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:12:12,834 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:12:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:16,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:20,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f400fd0 state=finished raised ConnectionError>]
+2025-09-08 10:12:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:12:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:12:20,836 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:12:34,832 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:38,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f400ed0 state=finished raised ConnectionError>]
+2025-09-08 10:12:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:12:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:12:42,834 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:12:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:46,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:50,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:12:50,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f4006d0 state=finished raised ConnectionError>]
+2025-09-08 10:12:50,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:12:50,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:12:50,836 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:13:04,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:08,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f401dd0 state=finished raised ConnectionError>]
+2025-09-08 10:13:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:13:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:13:12,834 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:13:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:16,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f4020d0 state=finished raised ConnectionError>]
+2025-09-08 10:13:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:13:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:13:20,836 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:13:34,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:38,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f402450 state=finished raised ConnectionError>]
+2025-09-08 10:13:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:13:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:13:42,834 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:13:42,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:46,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:50,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:13:50,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f4027d0 state=finished raised ConnectionError>]
+2025-09-08 10:13:50,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:13:50,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:13:50,836 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:14:04,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:08,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:12,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:12,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f402bd0 state=finished raised ConnectionError>]
+2025-09-08 10:14:12,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:14:12,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:14:12,835 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:14:12,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:16,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f402ed0 state=finished raised ConnectionError>]
+2025-09-08 10:14:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:14:20,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:14:20,837 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:14:34,833 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:38,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:42,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:42,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f403250 state=finished raised ConnectionError>]
+2025-09-08 10:14:42,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:14:42,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:14:42,836 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:14:42,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:46,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:50,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:14:50,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f357f50 state=finished raised ConnectionError>]
+2025-09-08 10:14:50,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:14:50,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:14:50,837 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:15:04,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:08,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:12,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:12,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c0dd0 state=finished raised ConnectionError>]
+2025-09-08 10:15:12,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:15:12,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:15:12,835 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:15:12,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:16,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:20,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:20,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c06d0 state=finished raised ConnectionError>]
+2025-09-08 10:15:20,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:15:20,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:15:20,837 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:15:34,834 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:38,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:42,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:42,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c1050 state=finished raised ConnectionError>]
+2025-09-08 10:15:42,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY 50
+2025-09-08 10:15:42,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for NIFTY
+2025-09-08 10:15:42,836 - __main__.G6Platform - ERROR - 🔴 Failed to process NIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:15:42,836 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:46,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:50,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:15:50,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get LTP: RetryError[<Future at 0x15d0f3c1850 state=finished raised ConnectionError>]
+2025-09-08 10:15:50,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 No LTP data for NSE:NIFTY BANK
+2025-09-08 10:15:50,837 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 Failed to get spot price for BANKNIFTY
+2025-09-08 10:15:50,837 - __main__.G6Platform - ERROR - 🔴 Failed to process BANKNIFTY: G6Platform._store_collection_data() missing 2 required positional arguments: 'offset' and 'options_data'
+2025-09-08 10:16:04,835 - kite_provider_complete.KiteDataProvider - ERROR - 🔴 API request ltp failed: Kite Connect not initialized
+2025-09-08 10:16:08,304 - __main__.G6Platform - INFO - 🛑 Stopping G6 Platform...

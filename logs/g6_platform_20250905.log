@@ -1,0 +1,135 @@
+2025-09-05 21:24:24,724 - __main__.G6Platform - INFO - ✅ Logging configured
+2025-09-05 21:24:24,725 - path_resolver_complete - DEBUG - ✅ Found project root at C:\Users\ASUS\Downloads\exported-assets (20) (marker: requirements.txt)
+2025-09-05 21:24:24,725 - path_resolver_complete - DEBUG - ✅ Directory ensured: C:\Users\ASUS\Downloads\exported-assets (20)
+2025-09-05 21:24:24,725 - path_resolver_complete - INFO - ✅ PathResolver initialized with base: C:\Users\ASUS\Downloads\exported-assets (20)
+2025-09-05 21:24:28,328 - market_hours_complete.MarketHours - INFO - ✅ Market Hours initialized for NSE in Asia/Kolkata
+2025-09-05 21:24:28,329 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: system_cpu_usage_percent
+2025-09-05 21:24:28,329 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: system_memory_usage_bytes
+2025-09-05 21:24:28,329 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: system_disk_usage_bytes
+2025-09-05 21:24:28,329 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: application_uptime_seconds
+2025-09-05 21:24:28,329 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: requests_total
+2025-09-05 21:24:28,329 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: request_duration_seconds
+2025-09-05 21:24:28,330 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: errors_total
+2025-09-05 21:24:28,330 - metrics_system.MetricsRegistry - INFO - ✅ Metrics Registry initialized
+2025-09-05 21:24:28,330 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: g6_collections_total
+2025-09-05 21:24:28,330 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: g6_processing_duration_seconds
+2025-09-05 21:24:28,330 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: g6_errors_total
+2025-09-05 21:24:28,331 - __main__.G6Platform - INFO - ✅ Metrics system initialized
+2025-09-05 21:24:28,331 - health_monitor.HealthMonitor - INFO - ✅ Health Monitor initialized
+2025-09-05 21:24:28,331 - health_monitor.HealthMonitor - DEBUG - ✅ Registered check: g6_platform_core.platform_status
+2025-09-05 21:24:28,331 - health_monitor.HealthMonitor - INFO - ✅ Component registered: g6_platform_core with 1 checks
+2025-09-05 21:24:28,332 - health_monitor.HealthMonitor - INFO - 🔄 Health monitoring loop started
+2025-09-05 21:24:28,332 - health_monitor.HealthMonitor - INFO - 🚀 Health monitoring started with 60s interval
+2025-09-05 21:24:28,332 - health_monitor.HealthMonitor - DEBUG - 🧪 Check completed: g6_platform_core.platform_status -> unhealthy
+2025-09-05 21:24:28,332 - __main__.G6Platform - INFO - ✅ Health monitoring initialized
+2025-09-05 21:24:28,333 - health_monitor.HealthMonitor - WARNING - 🔔 ALERT: CRITICAL: g6_platform_core is in critical state
+2025-09-05 21:24:28,333 - __main__.G6Platform - INFO - 🎭 Running in mock mode - authentication skipped
+2025-09-05 21:24:28,334 - mock_testing_framework.MockMarketDataGenerator - INFO - ✅ Mock Market Data Generator initialized
+2025-09-05 21:24:28,334 - mock_testing_framework.MockKiteProvider - INFO - ✅ Mock Kite Provider initialized
+2025-09-05 21:24:28,335 - __main__.G6Platform - INFO - 🎭 Mock data provider initialized
+2025-09-05 21:24:28,335 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - ✅ Enhanced CSV Sink initialized with base: data\csv
+2025-09-05 21:24:28,335 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - 🎛️ Configuration: compression=False, backup=True, max_size=100MB
+2025-09-05 21:24:28,335 - __main__.G6Platform - INFO - ✅ CSV storage initialized
+2025-09-05 21:24:28,336 - atm_options_collector.ATMOptionsCollector - INFO - ✅ ATM Options Collector initialized
+2025-09-05 21:24:28,336 - overview_collector.OverviewCollector - INFO - ✅ Overview Collector initialized (advanced_analytics: True)
+2025-09-05 21:24:28,336 - analytics_engine.IVCalculator - INFO - ✅ IV Calculator initialized (r=0.06, q=0.0)
+2025-09-05 21:24:28,336 - analytics_engine.GreeksCalculator - INFO - ✅ Greeks Calculator initialized
+2025-09-05 21:24:28,336 - analytics_engine.PCRAnalyzer - INFO - ✅ PCR Analyzer initialized
+2025-09-05 21:24:28,336 - __main__.G6Platform - INFO - ✅ Collectors and analytics initialized
+2025-09-05 21:24:28,337 - __main__.G6Platform - INFO - ✅ G6 Platform initialization completed
+2025-09-05 21:24:28,337 - __main__.G6Platform - INFO - 🚀 Starting G6 Platform...
+2025-09-05 21:24:28,337 - __main__.G6Platform - INFO - 🔄 Main processing loop started
+2025-09-05 21:24:28,337 - __main__.G6Platform - INFO - ✅ G6 Platform started successfully
+2025-09-05 21:24:28,338 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:24:58,338 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:25:28,338 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:25:28,346 - health_monitor.HealthMonitor - DEBUG - 🧪 Check completed: g6_platform_core.platform_status -> healthy
+2025-09-05 21:25:58,338 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:26:28,339 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:26:28,348 - health_monitor.HealthMonitor - DEBUG - 🧪 Check completed: g6_platform_core.platform_status -> healthy
+2025-09-05 21:26:39,618 - __main__.G6Platform - INFO - 🛑 Stopping G6 Platform...
+2025-09-05 21:26:49,626 - __main__.G6Platform - WARNING - ⚠️ Main loop thread did not stop gracefully
+2025-09-05 21:26:49,627 - health_monitor.HealthMonitor - INFO - 🔄 Health monitoring loop stopped
+2025-09-05 21:26:49,628 - health_monitor.HealthMonitor - INFO - 🛑 Health monitoring stopped
+2025-09-05 21:26:49,628 - __main__.G6Platform - INFO - 🛑 G6 Platform stopped. Final stats: Uptime: 141s, Collections: 0, Success Rate: 0.0%
+2025-09-05 21:26:58,339 - __main__.G6Platform - INFO - 🔄 Main processing loop stopped
+2025-09-05 21:39:29,561 - __main__.G6Platform - INFO - ✅ Logging configured
+2025-09-05 21:39:29,561 - path_resolver_complete - INFO - ✅ PathResolver initialized with base: C:\Users\ASUS\Downloads\exported-assets (20)
+2025-09-05 21:39:29,612 - market_hours_complete.MarketHours - INFO - ✅ Market Hours initialized for NSE in Asia/Kolkata
+2025-09-05 21:39:29,613 - metrics_system.MetricsRegistry - INFO - ✅ Metrics Registry initialized
+2025-09-05 21:39:29,613 - __main__.G6Platform - INFO - ✅ Metrics system initialized
+2025-09-05 21:39:29,614 - health_monitor.HealthMonitor - INFO - ✅ Health Monitor initialized
+2025-09-05 21:39:29,614 - health_monitor.HealthMonitor - INFO - ✅ Component registered: g6_platform_core with 1 checks
+2025-09-05 21:39:29,615 - health_monitor.HealthMonitor - INFO - 🔄 Health monitoring loop started
+2025-09-05 21:39:29,615 - health_monitor.HealthMonitor - INFO - 🚀 Health monitoring started with 60s interval
+2025-09-05 21:39:29,615 - health_monitor.HealthMonitor - WARNING - 🔔 ALERT: CRITICAL: g6_platform_core is in critical state
+2025-09-05 21:39:29,615 - __main__.G6Platform - INFO - ✅ Health monitoring initialized
+2025-09-05 21:39:29,616 - __main__.G6Platform - INFO - 🎭 Running in mock mode - authentication skipped
+2025-09-05 21:39:29,616 - mock_testing_framework.MockMarketDataGenerator - INFO - ✅ Mock Market Data Generator initialized
+2025-09-05 21:39:29,616 - mock_testing_framework.MockKiteProvider - INFO - ✅ Mock Kite Provider initialized
+2025-09-05 21:39:29,616 - __main__.G6Platform - INFO - 🎭 Mock data provider initialized
+2025-09-05 21:39:29,617 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - ✅ Enhanced CSV Sink initialized with base: data\csv
+2025-09-05 21:39:29,617 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - 🎛️ Configuration: compression=False, backup=True, max_size=100MB
+2025-09-05 21:39:29,617 - __main__.G6Platform - INFO - ✅ CSV storage initialized
+2025-09-05 21:39:29,617 - atm_options_collector.ATMOptionsCollector - INFO - ✅ ATM Options Collector initialized
+2025-09-05 21:39:29,617 - overview_collector.OverviewCollector - INFO - ✅ Overview Collector initialized (advanced_analytics: True)
+2025-09-05 21:39:29,617 - analytics_engine.IVCalculator - INFO - ✅ IV Calculator initialized (r=0.06, q=0.0)
+2025-09-05 21:39:29,618 - analytics_engine.GreeksCalculator - INFO - ✅ Greeks Calculator initialized
+2025-09-05 21:39:29,618 - analytics_engine.PCRAnalyzer - INFO - ✅ PCR Analyzer initialized
+2025-09-05 21:39:29,618 - __main__.G6Platform - INFO - ✅ Collectors and analytics initialized
+2025-09-05 21:39:29,618 - __main__.G6Platform - INFO - ✅ G6 Platform initialization completed
+2025-09-05 21:56:46,773 - __main__.G6Platform - INFO - ✅ Logging configured
+2025-09-05 21:56:46,774 - path_resolver_complete - DEBUG - ✅ Found project root at C:\Users\ASUS\Downloads\exported-assets (20) (marker: requirements.txt)
+2025-09-05 21:56:46,775 - path_resolver_complete - DEBUG - ✅ Directory ensured: C:\Users\ASUS\Downloads\exported-assets (20)
+2025-09-05 21:56:46,775 - path_resolver_complete - INFO - ✅ PathResolver initialized with base: C:\Users\ASUS\Downloads\exported-assets (20)
+2025-09-05 21:56:46,837 - market_hours_complete.MarketHours - INFO - ✅ Market Hours initialized for NSE in Asia/Kolkata
+2025-09-05 21:56:46,837 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: system_cpu_usage_percent
+2025-09-05 21:56:46,837 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: system_memory_usage_bytes
+2025-09-05 21:56:46,837 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: system_disk_usage_bytes
+2025-09-05 21:56:46,838 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: application_uptime_seconds
+2025-09-05 21:56:46,838 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: requests_total
+2025-09-05 21:56:46,838 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: request_duration_seconds
+2025-09-05 21:56:46,839 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: errors_total
+2025-09-05 21:56:46,839 - metrics_system.MetricsRegistry - INFO - ✅ Metrics Registry initialized
+2025-09-05 21:56:46,839 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: g6_collections_total
+2025-09-05 21:56:46,840 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: g6_processing_duration_seconds
+2025-09-05 21:56:46,840 - metrics_system.MetricsRegistry - DEBUG - ✅ Registered metric: g6_errors_total
+2025-09-05 21:56:46,840 - __main__.G6Platform - INFO - ✅ Metrics system initialized
+2025-09-05 21:56:46,840 - health_monitor.HealthMonitor - INFO - ✅ Health Monitor initialized
+2025-09-05 21:56:46,840 - health_monitor.HealthMonitor - DEBUG - ✅ Registered check: g6_platform_core.platform_status
+2025-09-05 21:56:46,840 - health_monitor.HealthMonitor - INFO - ✅ Component registered: g6_platform_core with 1 checks
+2025-09-05 21:56:46,841 - health_monitor.HealthMonitor - INFO - 🔄 Health monitoring loop started
+2025-09-05 21:56:46,841 - health_monitor.HealthMonitor - INFO - 🚀 Health monitoring started with 60s interval
+2025-09-05 21:56:46,842 - health_monitor.HealthMonitor - DEBUG - 🧪 Check completed: g6_platform_core.platform_status -> unhealthy
+2025-09-05 21:56:46,842 - __main__.G6Platform - INFO - ✅ Health monitoring initialized
+2025-09-05 21:56:46,842 - health_monitor.HealthMonitor - WARNING - 🔔 ALERT: CRITICAL: g6_platform_core is in critical state
+2025-09-05 21:56:46,842 - __main__.G6Platform - INFO - 🎭 Running in mock mode - authentication skipped
+2025-09-05 21:56:46,843 - mock_testing_framework.MockMarketDataGenerator - INFO - ✅ Mock Market Data Generator initialized
+2025-09-05 21:56:46,844 - mock_testing_framework.MockKiteProvider - INFO - ✅ Mock Kite Provider initialized
+2025-09-05 21:56:46,844 - __main__.G6Platform - INFO - 🎭 Mock data provider initialized
+2025-09-05 21:56:46,844 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - ✅ Enhanced CSV Sink initialized with base: data\csv
+2025-09-05 21:56:46,845 - enhanced_csv_sink_complete.EnhancedCSVSink - INFO - 🎛️ Configuration: compression=False, backup=True, max_size=100MB
+2025-09-05 21:56:46,845 - __main__.G6Platform - INFO - ✅ CSV storage initialized
+2025-09-05 21:56:46,845 - atm_options_collector.ATMOptionsCollector - INFO - ✅ ATM Options Collector initialized
+2025-09-05 21:56:46,845 - overview_collector.OverviewCollector - INFO - ✅ Overview Collector initialized (advanced_analytics: True)
+2025-09-05 21:56:46,845 - analytics_engine.IVCalculator - INFO - ✅ IV Calculator initialized (r=0.06, q=0.0)
+2025-09-05 21:56:46,846 - analytics_engine.GreeksCalculator - INFO - ✅ Greeks Calculator initialized
+2025-09-05 21:56:46,846 - analytics_engine.PCRAnalyzer - INFO - ✅ PCR Analyzer initialized
+2025-09-05 21:56:46,846 - __main__.G6Platform - INFO - ✅ Collectors and analytics initialized
+2025-09-05 21:56:46,846 - __main__.G6Platform - INFO - ✅ G6 Platform initialization completed
+2025-09-05 21:56:46,846 - __main__.G6Platform - INFO - 🚀 Starting G6 Platform...
+2025-09-05 21:56:46,847 - __main__.G6Platform - INFO - 🔄 Main processing loop started
+2025-09-05 21:56:46,847 - __main__.G6Platform - INFO - ✅ G6 Platform started successfully
+2025-09-05 21:56:46,847 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:57:16,848 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:57:46,848 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:57:46,850 - health_monitor.HealthMonitor - DEBUG - 🧪 Check completed: g6_platform_core.platform_status -> healthy
+2025-09-05 21:58:16,849 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:58:46,849 - __main__.G6Platform - DEBUG - 🕒 Market is closed - skipping data collection
+2025-09-05 21:58:46,862 - health_monitor.HealthMonitor - DEBUG - 🧪 Check completed: g6_platform_core.platform_status -> healthy
+2025-09-05 21:58:51,783 - __main__.G6Platform - INFO - 🛑 Stopping G6 Platform...
+2025-09-05 21:59:01,784 - __main__.G6Platform - WARNING - ⚠️ Main loop thread did not stop gracefully
+2025-09-05 21:59:01,784 - health_monitor.HealthMonitor - INFO - 🔄 Health monitoring loop stopped
+2025-09-05 21:59:01,785 - health_monitor.HealthMonitor - INFO - 🛑 Health monitoring stopped
+2025-09-05 21:59:01,786 - __main__.G6Platform - INFO - 🛑 G6 Platform stopped. Final stats: Uptime: 135s, Collections: 0, Success Rate: 0.0%
+2025-09-05 21:59:16,850 - __main__.G6Platform - INFO - 🔄 Main processing loop stopped
