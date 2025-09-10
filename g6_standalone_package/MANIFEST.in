@@ -1,0 +1,25 @@
+# Manifest file for including non-Python files in the package
+
+# Include documentation
+include README.md
+include LICENSE
+recursive-include docs *.md *.rst *.txt
+
+# Include configuration templates
+include config_template.json
+include requirements.txt
+
+# Include examples
+recursive-include examples *.py *.json *.md
+
+# Include package data
+recursive-include g6_platform *.json *.yaml *.yml *.txt *.md
+
+# Exclude development and cache files
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude *.so
+global-exclude .DS_Store
+global-exclude *.log
+global-exclude .env*
+global-exclude config.json

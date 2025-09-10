@@ -1,0 +1,37 @@
+# G6 Options Analytics Platform - Essential Dependencies
+# Minimal, production-ready dependency list
+
+# Core API Integration
+kiteconnect>=4.2.0                # Zerodha Kite Connect API
+requests>=2.31.0                   # HTTP requests library
+websocket-client>=1.6.0           # WebSocket support
+
+# Data Processing & Analytics
+numpy>=1.24.0                      # Numerical computations
+scipy>=1.10.0                      # Scientific computing
+pandas>=2.0.0                      # Data manipulation
+
+# Time Series & Database Storage  
+influxdb-client>=1.38.0            # InfluxDB integration
+pytz>=2023.3                       # Timezone handling
+
+# Security & Configuration
+cryptography>=41.0.0               # Token encryption
+python-dotenv>=1.0.0               # Environment variables
+pyyaml>=6.0                        # YAML configuration files
+
+# System Monitoring & Performance
+psutil>=5.9.0                      # System resource monitoring
+tenacity>=8.2.0                    # Retry mechanisms with exponential backoff
+
+# User Interface & Logging
+rich>=13.0.0                       # Rich console output
+colorlog>=6.7.0                    # Colored logging output
+
+# Data Serialization & Performance
+orjson>=3.9.0                      # Fast JSON processing
+pathlib; python_version<"3.4"     # Path handling backport
+
+# Optional Development Dependencies (comment out for production)
+# pytest>=7.4.0                     # Testing framework
+# pytest-asyncio>=0.21.0            # Async testing support
