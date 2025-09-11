@@ -90,6 +90,8 @@ class EssentialPackageCreator:
             
             'analytics_engine': [
                 'analytics_engine.py',             # Complete analytics implementation
+                'risk_analyzer.py',                # Risk analysis module
+                'volatility_analyzer.py',          # Volatility analysis module
             ],
             
             'core_platform': [
@@ -100,6 +102,7 @@ class EssentialPackageCreator:
                 'config.json',                     # Application configuration
                 'config_template.json',            # Configuration template
                 'requirements.txt',                # Python dependencies
+                'setup_fixed.py',                  # Professional package installation (rename to setup.py)
                 '.gitignore',                      # Git ignore rules
             ],
             
@@ -174,7 +177,6 @@ class EssentialPackageCreator:
             'enhanced_rich_launcher*.py',
             
             # Setup and debug files (functionality integrated)
-            'setup_fixed.py',
             'token_debug_and_fix.py',
             
             # Specific FINAL versions that are redundant
@@ -308,6 +310,97 @@ class EssentialPackageCreator:
             except Exception as e:
                 print(f"  ⚠️ Could not use enhanced main.py: {e}")
         
+        # Create __main__.py for proper package entry point
+        main_module_path = os.path.join(package_name, '__main__.py')
+        with open(main_module_path, 'w', encoding='utf-8') as f:
+            f.write('''#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+__main__.py - G6 Analytics Platform Package Entry Point
+Allows running the package with: python -m g6_platform
+"""
+
+if __name__ == "__main__":
+    from main import main
+    main()
+''')
+        print(f"  ✅ Created __main__.py package entry point")
+        
+        # Copy analytics files into g6_platform/analytics/ directory
+        analytics_files = ['analytics_engine.py', 'risk_analyzer.py', 'volatility_analyzer.py']
+        analytics_dir = os.path.join(package_name, 'g6_platform', 'analytics')
+        
+        for analytics_file in analytics_files:
+            if os.path.exists(analytics_file):
+                try:
+                    dest_file = os.path.join(analytics_dir, analytics_file)
+                    shutil.copy2(analytics_file, dest_file)
+                    print(f"  ✅ Added {analytics_file} to g6_platform/analytics/")
+                except Exception as e:
+                    print(f"  ❌ Could not copy {analytics_file}: {e}")
+        
+        # Rename setup_fixed.py to setup.py
+        setup_src = os.path.join(package_name, 'setup_fixed.py')
+        setup_dest = os.path.join(package_name, 'setup.py')
+        if os.path.exists(setup_src):
+            try:
+                shutil.move(setup_src, setup_dest)
+                print(f"  🔧 Renamed setup_fixed.py to setup.py")
+            except Exception as e:
+                print(f"  ⚠️ Could not rename setup file: {e}")
+        
+        # Create examples directory with sample usage
+        examples_dir = os.path.join(package_name, 'examples')
+        os.makedirs(examples_dir, exist_ok=True)
+        
+        example_usage_path = os.path.join(examples_dir, 'basic_usage.py')
+        with open(example_usage_path, 'w', encoding='utf-8') as f:
+            f.write('''#!/usr/bin/env python3
+"""
+G6 Analytics Platform - Basic Usage Example
+"""
+
+from g6_platform.core.platform import G6Platform
+from g6_platform.config.manager import ConfigManager
+
+def main():
+    """Example of basic platform usage."""
+    
+    # Initialize configuration
+    config_manager = ConfigManager()
+    config = config_manager.load_config()
+    
+    # Initialize platform
+    platform = G6Platform(config)
+    
+    # Start data collection
+    print("🚀 Starting G6 Analytics Platform...")
+    platform.start()
+    
+    print("✅ Platform started successfully!")
+    print("📊 Check the data/ directory for collected data")
+    print("📈 Check the logs/ directory for system logs")
+
+if __name__ == "__main__":
+    main()
+''')
+        print(f"  ✅ Created examples/basic_usage.py")
+        
+        # Create docs directory and move documentation files
+        docs_dir = os.path.join(package_name, 'docs')
+        os.makedirs(docs_dir, exist_ok=True)
+        
+        doc_files = ['COMPLETE_README.md', 'API_REFERENCE.md', 'CONFIGURATION_GUIDE.md', 'TROUBLESHOOTING.md']
+        for doc_file in doc_files:
+            src_path = os.path.join(package_name, doc_file)
+            if os.path.exists(src_path):
+                try:
+                    dest_path = os.path.join(docs_dir, doc_file)
+                    shutil.move(src_path, dest_path)
+                    print(f"  📚 Moved {doc_file} to docs/")
+                except Exception as e:
+                    print(f"  ⚠️ Could not move {doc_file}: {e}")
+        
         # Create essential directories
         essential_dirs = ['data', 'data/csv', 'logs', 'tokens']
         for dir_path in essential_dirs:
@@ -398,9 +491,27 @@ python main.py
 
 #### Analytics Engine
 - `analytics_engine.py` - Complete IV, Greeks, and PCR calculations
+- `risk_analyzer.py` - Advanced risk analysis and management
+- `volatility_analyzer.py` - Volatility calculations and analysis
+- `g6_platform/analytics/` - Analytics modules integrated into core platform
 
 #### Core Platform
 - `g6_platform/` - Complete core platform package
+  - `core/` - Platform orchestration  
+  - `api/` - Kite Connect integration & token management
+  - `collectors/` - Data collection modules
+  - `storage/` - CSV and InfluxDB storage backends
+  - `analytics/` - Options analytics engines + weekday overlay
+  - `monitoring/` - Health checks and metrics
+  - `config/` - Configuration management
+  - `ui/` - Production dashboard and terminal interfaces
+  - `utils/` - Utilities and data models
+
+#### Package Structure
+- `setup.py` - Professional package installation
+- `__main__.py` - Single entry point for package execution
+- `examples/` - Usage examples and production integration
+- `docs/` - Comprehensive documentation
 
 #### Configuration
 - `config.json` - Application configuration
