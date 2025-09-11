@@ -84,33 +84,26 @@ class EssentialPackageCreator:
         essential_files = {
             'entry_points': [
                 'main.py',                          # Unified application entry point
+                '__main__.py',                      # Package entry point
                 'first_run_diagnostics.py',        # System validation and setup
                 'comprehensive_testing.py',        # Complete testing framework
             ],
             
-            'analytics_engine': [
-                'analytics_engine.py',             # Complete analytics implementation
-                'risk_analyzer.py',                # Risk analysis module
-                'volatility_analyzer.py',          # Volatility analysis module
-            ],
-            
             'core_platform': [
-                'g6_platform/',                    # Entire core platform package
+                'g6_platform/',                    # Entire core platform package (includes analytics in g6_platform/analytics/)
             ],
             
             'configuration': [
                 'config.json',                     # Application configuration
                 'config_template.json',            # Configuration template
                 'requirements.txt',                # Python dependencies
-                'setup_fixed.py',                  # Professional package installation (rename to setup.py)
+                'setup.py',                        # Professional package installation
                 '.gitignore',                      # Git ignore rules
             ],
             
-            'documentation': [
-                'COMPLETE_README.md',              # Comprehensive documentation
-                'API_REFERENCE.md',                # API documentation
-                'CONFIGURATION_GUIDE.md',          # Configuration guide
-                'TROUBLESHOOTING.md',              # Troubleshooting guide
+            'package_structure': [
+                'examples/',                       # Usage examples and production integration
+                'docs/',                          # Comprehensive documentation
             ],
             
             'essential_support': [
@@ -312,8 +305,9 @@ class EssentialPackageCreator:
         
         # Create __main__.py for proper package entry point
         main_module_path = os.path.join(package_name, '__main__.py')
-        with open(main_module_path, 'w', encoding='utf-8') as f:
-            f.write('''#!/usr/bin/env python3
+        if not os.path.exists(main_module_path):
+            with open(main_module_path, 'w', encoding='utf-8') as f:
+                f.write('''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 __main__.py - G6 Analytics Platform Package Entry Point
@@ -324,38 +318,34 @@ if __name__ == "__main__":
     from main import main
     main()
 ''')
-        print(f"  ✅ Created __main__.py package entry point")
+            print(f"  ✅ Created __main__.py package entry point")
         
-        # Copy analytics files into g6_platform/analytics/ directory
-        analytics_files = ['analytics_engine.py', 'risk_analyzer.py', 'volatility_analyzer.py']
-        analytics_dir = os.path.join(package_name, 'g6_platform', 'analytics')
+        # Analytics files are now in g6_platform/analytics/ where they belong
+        # No need to copy them separately as they're included with g6_platform/
         
-        for analytics_file in analytics_files:
-            if os.path.exists(analytics_file):
-                try:
-                    dest_file = os.path.join(analytics_dir, analytics_file)
-                    shutil.copy2(analytics_file, dest_file)
-                    print(f"  ✅ Added {analytics_file} to g6_platform/analytics/")
-                except Exception as e:
-                    print(f"  ❌ Could not copy {analytics_file}: {e}")
-        
-        # Rename setup_fixed.py to setup.py
+        # Rename setup_fixed.py to setup.py if needed
         setup_src = os.path.join(package_name, 'setup_fixed.py')
         setup_dest = os.path.join(package_name, 'setup.py')
-        if os.path.exists(setup_src):
+        if os.path.exists(setup_src) and not os.path.exists(setup_dest):
             try:
                 shutil.move(setup_src, setup_dest)
                 print(f"  🔧 Renamed setup_fixed.py to setup.py")
             except Exception as e:
                 print(f"  ⚠️ Could not rename setup file: {e}")
+        elif os.path.exists(setup_dest):
+            print(f"  ✅ setup.py already exists")
         
-        # Create examples directory with sample usage
+        # Ensure examples directory exists and has content
         examples_dir = os.path.join(package_name, 'examples')
-        os.makedirs(examples_dir, exist_ok=True)
-        
-        example_usage_path = os.path.join(examples_dir, 'basic_usage.py')
-        with open(example_usage_path, 'w', encoding='utf-8') as f:
-            f.write('''#!/usr/bin/env python3
+        if os.path.exists('examples') and os.path.isdir('examples'):
+            print(f"  ✅ examples/ directory included")
+        else:
+            # Create basic examples if source doesn't exist
+            os.makedirs(examples_dir, exist_ok=True)
+            example_usage_path = os.path.join(examples_dir, 'basic_usage.py')
+            if not os.path.exists(example_usage_path):
+                with open(example_usage_path, 'w', encoding='utf-8') as f:
+                    f.write('''#!/usr/bin/env python3
 """
 G6 Analytics Platform - Basic Usage Example
 """
@@ -384,22 +374,15 @@ def main():
 if __name__ == "__main__":
     main()
 ''')
-        print(f"  ✅ Created examples/basic_usage.py")
+                print(f"  ✅ Created examples/basic_usage.py")
         
-        # Create docs directory and move documentation files
+        # Ensure docs directory has content
         docs_dir = os.path.join(package_name, 'docs')
-        os.makedirs(docs_dir, exist_ok=True)
-        
-        doc_files = ['COMPLETE_README.md', 'API_REFERENCE.md', 'CONFIGURATION_GUIDE.md', 'TROUBLESHOOTING.md']
-        for doc_file in doc_files:
-            src_path = os.path.join(package_name, doc_file)
-            if os.path.exists(src_path):
-                try:
-                    dest_path = os.path.join(docs_dir, doc_file)
-                    shutil.move(src_path, dest_path)
-                    print(f"  📚 Moved {doc_file} to docs/")
-                except Exception as e:
-                    print(f"  ⚠️ Could not move {doc_file}: {e}")
+        if os.path.exists('docs') and os.path.isdir('docs'):
+            print(f"  ✅ docs/ directory included")
+        else:
+            # Docs are now handled by the directory copy above
+            pass
         
         # Create essential directories
         essential_dirs = ['data', 'data/csv', 'logs', 'tokens']
