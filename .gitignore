@@ -82,6 +82,9 @@ exports/
 tokens/
 .cache/
 
+# Generated packages from download_essential_package.py
+g6_essential_package_*/
+
 # Configuration files with secrets
 .env
 *.env
