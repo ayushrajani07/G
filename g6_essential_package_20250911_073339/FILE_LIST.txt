@@ -1,0 +1,40 @@
+G6 Analytics Platform - Essential Files List
+==================================================
+
+API_REFERENCE.md                              16043 bytes
+COMPLETE_README.md                            29104 bytes
+CONFIGURATION_GUIDE.md                        21507 bytes
+TROUBLESHOOTING.md                            21764 bytes
+analytics_engine.py                           29263 bytes
+atm_options_collector.py                      26752 bytes
+comprehensive_testing.py                      19186 bytes
+config.json                                    6437 bytes
+config_manager.py                             15550 bytes
+config_template.json                           5019 bytes
+data_models.py                                22486 bytes
+first_run_diagnostics.py                      22443 bytes
+g6_platform/__init__.py                        1826 bytes
+g6_platform/analytics/__init__.py                40 bytes
+g6_platform/api/__init__.py                      30 bytes
+g6_platform/api/kite_provider.py              27834 bytes
+g6_platform/api/token_manager.py              25255 bytes
+g6_platform/collectors/__init__.py               29 bytes
+g6_platform/collectors/atm_collector.py       23656 bytes
+g6_platform/collectors/overview_collector.py      23369 bytes
+g6_platform/config/__init__.py                   38 bytes
+g6_platform/config/manager.py                 16792 bytes
+g6_platform/core/__init__.py                     35 bytes
+g6_platform/core/platform.py                  29707 bytes
+g6_platform/monitoring/__init__.py               35 bytes
+g6_platform/monitoring/health.py              30305 bytes
+g6_platform/monitoring/metrics.py             24503 bytes
+g6_platform/monitoring/performance.py         27800 bytes
+g6_platform/storage/__init__.py                  30 bytes
+g6_platform/storage/csv_sink.py               22876 bytes
+g6_platform/storage/influxdb_sink.py          24023 bytes
+g6_platform/ui/__init__.py                       32 bytes
+g6_platform/ui/terminal_interface.py          16237 bytes
+g6_platform/utils/__init__.py                    28 bytes
+g6_platform/utils/path_resolver.py            22034 bytes
+main.py                                       20201 bytes
+requirements.txt                               2995 bytes
