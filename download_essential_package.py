@@ -615,9 +615,15 @@ pause
                 if os.path.exists(main_path):
                     with open(main_path, 'r', encoding='utf-8') as f:
                         main_content = f.read()
-                        if 'from g6_platform import' in main_content and 'def main()' in main_content:
+                        # Check for enhanced main.py features
+                        if ('def check_and_install_dependencies' in main_content and 
+                            'class G6Launcher' in main_content and
+                            'def main()' in main_content):
                             validation_results['import_tests'] = True
-                            print("  ✅ Import tests - Passed")
+                            print("  ✅ Import tests - Enhanced main.py detected")
+                        elif 'from g6_platform import' in main_content and 'def main()' in main_content:
+                            validation_results['import_tests'] = True
+                            print("  ✅ Import tests - Standard main.py detected")
                         else:
                             validation_results['warnings'].append("main.py structure may be incomplete")
                             print("  ⚠️ Import tests - Warnings")
