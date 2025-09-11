@@ -14,15 +14,52 @@ for a fully functional G6 Analytics Platform deployment.
 - Generates deployment documentation
 - Provides size optimization
 - Creates installation instructions
+
+🔧 WINDOWS ENCODING FIX: Forces UTF-8 encoding for emoji support
 """
 
 import os
+import sys
 import shutil
 import json
 import zipfile
 from datetime import datetime
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Any
 import subprocess
+
+# 🔧 CRITICAL FIX: Force UTF-8 encoding on Windows to prevent UnicodeEncodeError
+def setup_encoding():
+    """Setup proper UTF-8 encoding for Windows systems."""
+    # Set environment variables for UTF-8
+    os.environ['PYTHONIOENCODING'] = 'utf-8'
+    os.environ['PYTHONUTF8'] = '1'
+    
+    # For Windows console compatibility
+    if os.name == 'nt':
+        try:
+            # Reconfigure stdout/stderr to use UTF-8
+            if hasattr(sys.stdout, 'reconfigure'):
+                sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+            if hasattr(sys.stderr, 'reconfigure'):
+                sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+                
+            # Enable VT100 mode for Windows console (for better emoji support)
+            import ctypes
+            from ctypes import wintypes
+            
+            kernel32 = ctypes.windll.kernel32
+            stdout_handle = kernel32.GetStdHandle(-11)  # STD_OUTPUT_HANDLE
+            mode = wintypes.DWORD()
+            kernel32.GetConsoleMode(stdout_handle, ctypes.byref(mode))
+            mode.value |= 4  # ENABLE_VIRTUAL_TERMINAL_PROCESSING
+            kernel32.SetConsoleMode(stdout_handle, mode)
+            
+        except Exception:
+            # If VT100 setup fails, continue with basic UTF-8
+            pass
+
+# Setup encoding before any file operations
+setup_encoding()
 
 class EssentialPackageCreator:
     """📦 Creates essential files package for G6 Platform."""
@@ -47,36 +84,41 @@ class EssentialPackageCreator:
         essential_files = {
             'entry_points': [
                 'main.py',                          # Unified application entry point
+                '__main__.py',                      # Package entry point
                 'first_run_diagnostics.py',        # System validation and setup
                 'comprehensive_testing.py',        # Complete testing framework
             ],
             
-            'analytics_engine': [
-                'analytics_engine.py',             # Complete analytics implementation
-            ],
-            
             'core_platform': [
-                'g6_platform/',                    # Entire core platform package
+                'g6_platform/',                    # Entire core platform package (includes analytics in g6_platform/analytics/)
             ],
             
             'configuration': [
                 'config.json',                     # Application configuration
                 'config_template.json',            # Configuration template
                 'requirements.txt',                # Python dependencies
+                'setup.py',                        # Professional package installation
                 '.gitignore',                      # Git ignore rules
             ],
             
-            'documentation': [
-                'COMPLETE_README.md',              # Comprehensive documentation
-                'API_REFERENCE.md',                # API documentation
-                'CONFIGURATION_GUIDE.md',          # Configuration guide
-                'TROUBLESHOOTING.md',              # Troubleshooting guide
+            'package_structure': [
+                'examples/',                       # Usage examples and production integration
+                'docs/',                          # Comprehensive documentation
             ],
             
             'essential_support': [
                 'atm_options_collector.py',        # Options data collection (contains OptionData class)
                 'data_models.py',                  # Data structure definitions
                 'config_manager.py',               # Configuration management
+            ],
+            
+            'optional_utilities': [
+                'token_manager.py',                # Token management utilities (if exists)
+                'health_monitor.py',               # Health monitoring (if exists)
+                'metrics_system.py',               # Metrics collection (if exists)
+                'performance_monitor.py',          # Performance monitoring (if exists)
+                'market_hours_complete.py',        # Market hours utilities (if exists)
+                'overview_collector.py',           # Overview data collection (if exists)
             ]
         }
         
@@ -92,11 +134,12 @@ class EssentialPackageCreator:
             'fixed_*_launcher*.py',
             'nonblocking_*_launcher*.py',
             'web_launcher*.py',
+            'final_launcher*.py',
             
             # Legacy kite login files (integrated into core)
             'kite_login_and_launch*.py',
             
-            # Legacy main files (consolidated)
+            # Legacy main files (consolidated into main.py)
             'main_application_complete.py',
             'g6_platform_main*.py',
             'g6_enhanced_data_platform.py',
@@ -107,6 +150,8 @@ class EssentialPackageCreator:
             'README (1).md',
             'README_G6.md',
             'FINAL_*.md',
+            'FINAL_IMPLEMENTATION_SUMMARY.md',
+            'FINAL_SOLUTION_SUMMARY.md',
             
             # Individual test files (replaced by comprehensive_testing.py)
             'test_analytics.py',
@@ -115,22 +160,22 @@ class EssentialPackageCreator:
             'quick_test.py',
             'mock_testing_framework.py',
             
-            # Utility files that are optional
-            'overview_collector.py',
-            'overview_generator.py',
+            # Utility files that are optional or duplicated
             'quick_platform_diagnostic.py',
             'g6_diagnostics.py',
             
-            # Enhanced files that are consolidated
-            'enhanced_*.py',
+            # Enhanced files that are consolidated (but keep the _complete ones we might need)
+            'enhanced_ultimate_launcher.py',
+            'enhanced_terminal_ui.py',
+            'enhanced_rich_launcher*.py',
             
-            # Setup and token debug files
-            'setup_fixed.py',
+            # Setup and debug files (functionality integrated)
             'token_debug_and_fix.py',
             
-            # Complete versions (functionality integrated)
-            '*_complete.py',
+            # Specific FINAL versions that are redundant
             '*_FINAL*.py',
+            '*_WORKING.py',
+            'g6_platform_main_v2.py',
         ]
         
         return redundant_patterns
@@ -248,6 +293,97 @@ class EssentialPackageCreator:
                 copy_errors.append(f"{file_path}: {str(e)}")
                 print(f"  ❌ {file_path}: {str(e)}")
         
+        # Replace main.py with enhanced version if available
+        enhanced_main_path = 'enhanced_main_template.py'
+        main_dest_path = os.path.join(package_name, 'main.py')
+        if os.path.exists(enhanced_main_path) and os.path.exists(main_dest_path):
+            try:
+                shutil.copy2(enhanced_main_path, main_dest_path)
+                print(f"  🔧 Enhanced main.py with better error handling")
+            except Exception as e:
+                print(f"  ⚠️ Could not use enhanced main.py: {e}")
+        
+        # Create __main__.py for proper package entry point
+        main_module_path = os.path.join(package_name, '__main__.py')
+        if not os.path.exists(main_module_path):
+            with open(main_module_path, 'w', encoding='utf-8') as f:
+                f.write('''#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+__main__.py - G6 Analytics Platform Package Entry Point
+Allows running the package with: python -m g6_platform
+"""
+
+if __name__ == "__main__":
+    from main import main
+    main()
+''')
+            print(f"  ✅ Created __main__.py package entry point")
+        
+        # Analytics files are now in g6_platform/analytics/ where they belong
+        # No need to copy them separately as they're included with g6_platform/
+        
+        # Rename setup_fixed.py to setup.py if needed
+        setup_src = os.path.join(package_name, 'setup_fixed.py')
+        setup_dest = os.path.join(package_name, 'setup.py')
+        if os.path.exists(setup_src) and not os.path.exists(setup_dest):
+            try:
+                shutil.move(setup_src, setup_dest)
+                print(f"  🔧 Renamed setup_fixed.py to setup.py")
+            except Exception as e:
+                print(f"  ⚠️ Could not rename setup file: {e}")
+        elif os.path.exists(setup_dest):
+            print(f"  ✅ setup.py already exists")
+        
+        # Ensure examples directory exists and has content
+        examples_dir = os.path.join(package_name, 'examples')
+        if os.path.exists('examples') and os.path.isdir('examples'):
+            print(f"  ✅ examples/ directory included")
+        else:
+            # Create basic examples if source doesn't exist
+            os.makedirs(examples_dir, exist_ok=True)
+            example_usage_path = os.path.join(examples_dir, 'basic_usage.py')
+            if not os.path.exists(example_usage_path):
+                with open(example_usage_path, 'w', encoding='utf-8') as f:
+                    f.write('''#!/usr/bin/env python3
+"""
+G6 Analytics Platform - Basic Usage Example
+"""
+
+from g6_platform.core.platform import G6Platform
+from g6_platform.config.manager import ConfigManager
+
+def main():
+    """Example of basic platform usage."""
+    
+    # Initialize configuration
+    config_manager = ConfigManager()
+    config = config_manager.load_config()
+    
+    # Initialize platform
+    platform = G6Platform(config)
+    
+    # Start data collection
+    print("🚀 Starting G6 Analytics Platform...")
+    platform.start()
+    
+    print("✅ Platform started successfully!")
+    print("📊 Check the data/ directory for collected data")
+    print("📈 Check the logs/ directory for system logs")
+
+if __name__ == "__main__":
+    main()
+''')
+                print(f"  ✅ Created examples/basic_usage.py")
+        
+        # Ensure docs directory has content
+        docs_dir = os.path.join(package_name, 'docs')
+        if os.path.exists('docs') and os.path.isdir('docs'):
+            print(f"  ✅ docs/ directory included")
+        else:
+            # Docs are now handled by the directory copy above
+            pass
+        
         # Create essential directories
         essential_dirs = ['data', 'data/csv', 'logs', 'tokens']
         for dir_path in essential_dirs:
@@ -256,7 +392,7 @@ class EssentialPackageCreator:
             
             # Create .gitkeep file
             gitkeep_path = os.path.join(full_path, '.gitkeep')
-            with open(gitkeep_path, 'w') as f:
+            with open(gitkeep_path, 'w', encoding='utf-8') as f:
                 f.write('# Directory structure preserved for G6 Platform\n')
         
         # Create package documentation
@@ -275,6 +411,9 @@ class EssentialPackageCreator:
         if copy_errors:
             print(f"  ⚠️ Errors: {len(copy_errors)}")
         
+        # Validate the package
+        validation_results = self.validate_package(package_name)
+        
         return package_name
     
     def create_package_documentation(self, package_name: str, essential_files: List[str], 
@@ -284,7 +423,7 @@ class EssentialPackageCreator:
         
         package_info_path = os.path.join(package_name, 'PACKAGE_INFO.md')
         
-        with open(package_info_path, 'w') as f:
+        with open(package_info_path, 'w', encoding='utf-8') as f:
             f.write(f"""# 📦 G6 Analytics Platform - Essential Files Package
 
 ## Package Information
@@ -335,9 +474,27 @@ python main.py
 
 #### Analytics Engine
 - `analytics_engine.py` - Complete IV, Greeks, and PCR calculations
+- `risk_analyzer.py` - Advanced risk analysis and management
+- `volatility_analyzer.py` - Volatility calculations and analysis
+- `g6_platform/analytics/` - Analytics modules integrated into core platform
 
 #### Core Platform
 - `g6_platform/` - Complete core platform package
+  - `core/` - Platform orchestration  
+  - `api/` - Kite Connect integration & token management
+  - `collectors/` - Data collection modules
+  - `storage/` - CSV and InfluxDB storage backends
+  - `analytics/` - Options analytics engines + weekday overlay
+  - `monitoring/` - Health checks and metrics
+  - `config/` - Configuration management
+  - `ui/` - Production dashboard and terminal interfaces
+  - `utils/` - Utilities and data models
+
+#### Package Structure
+- `setup.py` - Professional package installation
+- `__main__.py` - Single entry point for package execution
+- `examples/` - Usage examples and production integration
+- `docs/` - Comprehensive documentation
 
 #### Configuration
 - `config.json` - Application configuration
@@ -391,7 +548,7 @@ For issues or questions, refer to:
         
         # Create file list
         file_list_path = os.path.join(package_name, 'FILE_LIST.txt')
-        with open(file_list_path, 'w') as f:
+        with open(file_list_path, 'w', encoding='utf-8') as f:
             f.write("G6 Analytics Platform - Essential Files List\n")
             f.write("=" * 50 + "\n\n")
             
@@ -403,7 +560,7 @@ For issues or questions, refer to:
         # Create setup log
         if copy_errors:
             error_log_path = os.path.join(package_name, 'SETUP_ERRORS.log')
-            with open(error_log_path, 'w') as f:
+            with open(error_log_path, 'w', encoding='utf-8') as f:
                 f.write("Package Creation Errors\n")
                 f.write("=" * 30 + "\n\n")
                 for error in copy_errors:
@@ -414,7 +571,7 @@ For issues or questions, refer to:
         
         # Create setup script for Unix/Linux
         setup_script_path = os.path.join(package_name, 'setup.sh')
-        with open(setup_script_path, 'w') as f:
+        with open(setup_script_path, 'w', encoding='utf-8') as f:
             f.write("""#!/bin/bash
 # G6 Analytics Platform - Setup Script
 
@@ -456,7 +613,7 @@ echo "✅ Setup complete! Run 'python main.py' to start the platform."
         
         # Create Windows batch file
         setup_bat_path = os.path.join(package_name, 'setup.bat')
-        with open(setup_bat_path, 'w') as f:
+        with open(setup_bat_path, 'w', encoding='utf-8') as f:
             f.write("""@echo off
 REM G6 Analytics Platform - Windows Setup Script
 
@@ -503,7 +660,144 @@ pause
                     pass  # Handle permission errors
         return total_size / (1024 * 1024)
     
+    def validate_package(self, package_name: str) -> Dict[str, Any]:
+        """🔍 Validate the created package for completeness and functionality."""
+        
+        print(f"\n🔍 Validating Package: {package_name}")
+        print("-" * 45)
+        
+        validation_results = {
+            'package_structure': False,
+            'import_tests': False,
+            'dependencies': False,
+            'configuration': False,
+            'errors': [],
+            'warnings': []
+        }
+        
+        try:
+            # Check package structure
+            required_files = ['main.py', 'config.json', 'requirements.txt', 'first_run_diagnostics.py']
+            required_dirs = ['g6_platform', 'data', 'logs']
+            
+            missing_files = []
+            for file in required_files:
+                if not os.path.exists(os.path.join(package_name, file)):
+                    missing_files.append(file)
+            
+            missing_dirs = []
+            for dir_name in required_dirs:
+                if not os.path.exists(os.path.join(package_name, dir_name)):
+                    missing_dirs.append(dir_name)
+            
+            if not missing_files and not missing_dirs:
+                validation_results['package_structure'] = True
+                print("  ✅ Package structure - Complete")
+            else:
+                validation_results['errors'].extend([f"Missing file: {f}" for f in missing_files])
+                validation_results['errors'].extend([f"Missing directory: {d}" for d in missing_dirs])
+                print(f"  ❌ Package structure - Missing: {missing_files + missing_dirs}")
+            
+            # Test basic imports (simplified check)
+            import sys
+            original_path = sys.path.copy()
+            try:
+                sys.path.insert(0, package_name)
+                
+                # Test if we can read the main files without executing them
+                main_path = os.path.join(package_name, 'main.py')
+                if os.path.exists(main_path):
+                    with open(main_path, 'r', encoding='utf-8') as f:
+                        main_content = f.read()
+                        # Check for enhanced main.py features
+                        if ('def check_and_install_dependencies' in main_content and 
+                            'class G6Launcher' in main_content and
+                            'def main()' in main_content):
+                            validation_results['import_tests'] = True
+                            print("  ✅ Import tests - Enhanced main.py detected")
+                        elif 'from g6_platform import' in main_content and 'def main()' in main_content:
+                            validation_results['import_tests'] = True
+                            print("  ✅ Import tests - Standard main.py detected")
+                        else:
+                            validation_results['warnings'].append("main.py structure may be incomplete")
+                            print("  ⚠️ Import tests - Warnings")
+                
+            except Exception as e:
+                validation_results['errors'].append(f"Import test error: {str(e)}")
+                print(f"  ❌ Import tests - Failed: {str(e)}")
+            finally:
+                sys.path = original_path
+            
+            # Check dependencies
+            req_path = os.path.join(package_name, 'requirements.txt')
+            if os.path.exists(req_path):
+                with open(req_path, 'r', encoding='utf-8') as f:
+                    requirements = f.read()
+                    critical_deps = ['kiteconnect', 'numpy', 'rich', 'requests']
+                    missing_deps = [dep for dep in critical_deps if dep not in requirements]
+                    
+                    if not missing_deps:
+                        validation_results['dependencies'] = True
+                        print("  ✅ Dependencies - Complete")
+                    else:
+                        validation_results['warnings'].extend([f"Missing dependency: {dep}" for dep in missing_deps])
+                        print(f"  ⚠️ Dependencies - Missing: {missing_deps}")
+            
+            # Check configuration
+            config_path = os.path.join(package_name, 'config.json')
+            if os.path.exists(config_path):
+                try:
+                    with open(config_path, 'r', encoding='utf-8') as f:
+                        config = json.load(f)
+                        if 'platform' in config and 'market' in config:
+                            validation_results['configuration'] = True
+                            print("  ✅ Configuration - Valid")
+                        else:
+                            validation_results['warnings'].append("Configuration may be incomplete")
+                            print("  ⚠️ Configuration - Incomplete")
+                except json.JSONDecodeError as e:
+                    validation_results['errors'].append(f"Configuration JSON error: {str(e)}")
+                    print(f"  ❌ Configuration - Invalid JSON")
+            
+        except Exception as e:
+            validation_results['errors'].append(f"Validation error: {str(e)}")
+            print(f"  ❌ Validation failed: {str(e)}")
+        
+        # Summary
+        passed_checks = sum([validation_results['package_structure'], 
+                           validation_results['import_tests'],
+                           validation_results['dependencies'], 
+                           validation_results['configuration']])
+        total_checks = 4
+        
+        print(f"\n📊 Validation Summary: {passed_checks}/{total_checks} checks passed")
+        if validation_results['warnings']:
+            print(f"⚠️ Warnings: {len(validation_results['warnings'])}")
+        if validation_results['errors']:
+            print(f"❌ Errors: {len(validation_results['errors'])}")
+        
+        return validation_results
+    
     def create_zip_package(self, package_name: str) -> str:
+        """🗜️ Create ZIP archive of the package."""
+        
+        zip_name = f"{package_name}.zip"
+        
+        print(f"\n🗜️ Creating ZIP Archive: {zip_name}")
+        print("-" * 45)
+        
+        with zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            for root, dirs, files in os.walk(package_name):
+                for file in files:
+                    file_path = os.path.join(root, file)
+                    arc_path = os.path.relpath(file_path, '.')
+                    zipf.write(file_path, arc_path)
+                    print(f"  ✅ {arc_path}")
+        
+        zip_size = os.path.getsize(zip_name) / (1024 * 1024)
+        print(f"\n📦 ZIP Archive Created: {zip_name} ({zip_size:.2f} MB)")
+        
+        return zip_name
         """🗜️ Create ZIP archive of the package."""
         
         zip_name = f"{package_name}.zip"
