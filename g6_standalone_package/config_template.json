@@ -16,6 +16,20 @@
     "collection_interval": 30,
     "market_holidays": []
   },
+  "weekday_overlay": {
+    "enabled": true,
+    "indices": ["NIFTY", "BANKNIFTY", "FINNIFTY", "MIDCPNIFTY"],
+    "expiry_tags": ["current_week", "next_week", "monthly"],
+    "offsets": [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5],
+    "base_path": "data/weekday_overlays",
+    "backup_enabled": true,
+    "max_backup_files": 10,
+    "real_time_plotting": {
+      "enabled": true,
+      "update_interval": 30,
+      "plot_historical_days": 30
+    }
+  },
   "data_collection": {
     "options": {
       "strike_configuration": {
@@ -90,7 +104,8 @@
         "by_index": true,
         "by_expiry": true,
         "by_offset": true,
-        "filename_format": "YYYY-MM-DD_HHmmss.csv"
+        "path_format": "INDEX/EXPIRY_TAG/OFFSET/YYYY-MM-DD",
+        "filename_format": "YYYY-MM-DD.csv"
       }
     },
     "influxdb": {
@@ -164,6 +179,14 @@
         "max_lines": 50,
         "auto_scroll": true
       }
+    },
+    "production_dashboard": {
+      "enabled": true,
+      "max_data_entries": 25,
+      "max_log_entries": 50,
+      "update_interval": 1.0,
+      "enable_sound": false,
+      "auto_start": false
     },
     "dashboard": {
       "enabled": false,

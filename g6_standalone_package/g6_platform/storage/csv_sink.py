@@ -128,14 +128,19 @@ class CSVSink:
     def store_options_data(self,
                           index_name: str,
                           options_data: Union[List[Dict[str, Any]], Dict[str, Any]],
-                          timestamp: Optional[datetime] = None) -> bool:
+                          timestamp: Optional[datetime] = None,
+                          expiry_tag: str = "current_week",
+                          offset: Optional[int] = None) -> bool:
         """
-        Store options data to CSV file.
+        Store options data to CSV file with new path structure.
+        Path format: [INDEX]/[EXPIRY_TAG]/[OFFSET]/[YYYY-MM-DD].csv
         
         Args:
             index_name: Index name (NIFTY, BANKNIFTY, etc.)
             options_data: Options data to store
             timestamp: Optional timestamp (uses current if None)
+            expiry_tag: Expiry tag (current_week, next_week, monthly, etc.)
+            offset: Strike offset (0 for ATM, -1/-2 for ITM, +1/+2 for OTM)
             
         Returns:
             True if successful
@@ -151,8 +156,8 @@ class CSVSink:
                 logger.warning("⚠️ No options data to store")
                 return True
             
-            # Get file key for this index
-            file_key = self._get_file_key(index_name, timestamp)
+            # Get file key for this combination
+            file_key = self._get_structured_file_key(index_name, expiry_tag, offset, timestamp)
             
             # Write data
             success = self._write_data(file_key, options_data, timestamp)
@@ -203,9 +208,27 @@ class CSVSink:
             return False
     
     def _get_file_key(self, index_name: str, timestamp: datetime) -> str:
-        """Get file key for data storage."""
+        """Get file key for data storage (legacy method)."""
         date_str = timestamp.strftime("%Y-%m-%d")
         return f"{index_name}_{date_str}_options"
+    
+    def _get_structured_file_key(self, 
+                               index_name: str, 
+                               expiry_tag: str, 
+                               offset: Optional[int], 
+                               timestamp: datetime) -> str:
+        """
+        Get structured file key for new path format.
+        Format: [INDEX]/[EXPIRY_TAG]/[OFFSET]/[YYYY-MM-DD]
+        """
+        date_str = timestamp.strftime("%Y-%m-%d")
+        
+        # Handle cases where offset is not provided
+        if offset is None:
+            # For ATM or general data
+            return f"{index_name}|{expiry_tag}|ATM|{date_str}"
+        else:
+            return f"{index_name}|{expiry_tag}|{offset}|{date_str}"
     
     def _write_data(self,
                    file_key: str,
@@ -327,7 +350,25 @@ class CSVSink:
             return None, None
     
     def _get_file_path(self, file_key: str) -> Path:
-        """Get file path for file key."""
+        """
+        Get file path for file key supporting new structured format.
+        Supports both legacy and new path formats.
+        """
+        if '|' in file_key:
+            # New structured format: INDEX|EXPIRY_TAG|OFFSET|DATE
+            parts = file_key.split('|')
+            if len(parts) == 4:
+                index_name, expiry_tag, offset_str, date_str = parts
+                
+                # Create directory structure: [INDEX]/[EXPIRY_TAG]/[OFFSET]/
+                structured_dir = self.data_dir / index_name / expiry_tag / offset_str
+                structured_dir.mkdir(parents=True, exist_ok=True)
+                
+                # File name is just the date
+                filename = f"{date_str}.csv"
+                return structured_dir / filename
+        
+        # Legacy format
         filename = f"{file_key}.csv"
         return self.data_dir / filename
     
