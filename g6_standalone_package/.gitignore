@@ -75,6 +75,7 @@ Thumbs.db
 *.log
 logs/
 data/
+demo_data/
 cache/
 temp/
 backup/
